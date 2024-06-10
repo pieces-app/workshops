@@ -9,8 +9,65 @@
   }
 
   h1 {
-    @apply text-5xl mb-4;
+    @apply text-5xl mb-6;
   }
+}
+
+.container {
+  display: flex;
+  gap: 0px; /* Optional: Adds space between columns */
+  justify-content: space-between;
+}
+
+.margin-top--small {
+  margin-top: 10px;
+}
+
+.margin-top--medium {
+  margin-top: 20px;
+}
+
+.margin-top--large {
+  margin-top: 30px;
+}
+
+.margin-top--xlarge {
+  margin-top: 40px;
+}
+
+.margin-left--small {
+  margin-left: 10px;
+}
+
+.margin-left--medium {
+  margin-left: 20px;
+}
+
+.margin-left--large {
+  margin-left: 30px;
+}
+
+.margin-left--xlarge {
+  margin-left: 40px;
+}
+
+
+.column {
+  flex: 1;
+  padding: 10px;
+}
+
+.column-left {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.column-right {
+  border-right: 1px solid #ccc;
+}
+
+.column-middle {
+  border-right: 1px solid #ccc;
 }
 
 /* .slidev-layout {
