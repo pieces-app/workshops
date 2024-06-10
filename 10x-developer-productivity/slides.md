@@ -150,11 +150,11 @@ Will demo using Pieces as my copilot
 transition: fade
 layout: cover-logos
 logos: [
-    "/10x-developer-productivity/img/openai-logomark.svg",
-    "https://avatars.githubusercontent.com/u/132372032?s=200&v=4",
-    "/10x-developer-productivity/img/Meta_lockup_positive primary_RGB.svg",
     "/10x-developer-productivity/img/palm2.webp",
-    "/10x-developer-productivity/img/Google_Gemini_logo.svg"
+    "/10x-developer-productivity/img/mistral.png",
+    "/10x-developer-productivity/img/Google_Gemini_logo.svg",
+    "/10x-developer-productivity/img/openai-logomark.svg",
+    "/10x-developer-productivity/img/Meta_lockup_positive primary_RGB.svg",
 ]
 ---
 
@@ -173,11 +173,12 @@ layout: cover
 ---
 
 ```mermaid
-%%{init: {'theme': 'neutral' } }%%
-mindmap
-  root((Context))
-    llm-model(LLM model)
-      public-cloud)Public code(
+flowchart LR
+    subgraph LLM
+        direction LR
+        public-cloud(Public code)--->llm-model(LLM model)
+    end
+    LLM<--->context(((Developer)))
 ```
 
 ---
@@ -230,13 +231,17 @@ layout: cover
 ---
 
 ```mermaid
-%%{init: {'theme': 'neutral' } }%%
-mindmap
-  root((Context))
-    llm-model(LLM model)
-      public-cloud)Public code(
-    copilot-ide(Copilot)
-      code-ide(Code in your IDE)
+flowchart LR
+    subgraph LLM
+        direction LR
+        public-cloud(Public code)--->llm-model(LLM model)
+    end
+    subgraph Copilot
+        direction LR
+        code-ide(Code in your IDE)--->copilot-ide(Copilot)
+    end
+    LLM<--->context(((Developer)))
+    Copilot<--->context(((Developer)))
 ```
 
 ---
@@ -264,14 +269,18 @@ layout: cover
 ---
 
 ```mermaid
-%%{init: {'theme': 'neutral' } }%%
-mindmap
-  root((Context))
-    llm-model(LLM model)
-      public-cloud)Public code(
-    copilot-ide(Copilot)
-      code-ide(Code in your IDE)
-      web(Code in your browser)
+flowchart LR
+    subgraph LLM
+        direction LR
+        public-cloud(Public code)--->llm-model(LLM model)
+    end
+    subgraph Copilot
+        direction LR
+        code-ide(Code in your IDE)--->copilot-ide(Copilot)
+        web(Code in your browser)--->copilot-ide(Copilot)
+    end
+    LLM<--->context(((Developer)))
+    Copilot<--->context(((Developer)))
 ```
 
 ---
@@ -318,15 +327,23 @@ layout: cover
 ---
 
 ```mermaid
-%%{init: {'theme': 'neutral' } }%%
-mindmap
-  root((Context))
-    llm-model(LLM model)
-      public-cloud)Public code(
-    copilot-ide(Copilot)
-      code-ide(Code in your IDE)
-      web(Code in your browser)
-    snippets(Snippets)
+flowchart LR
+    subgraph LLM
+        direction LR
+        public-cloud(Public code)--->llm-model(LLM model)
+    end
+    subgraph Copilot
+        direction LR
+        code-ide(Code in your IDE)--->copilot-ide(Copilot)
+        web(Code in your browser)--->copilot-ide(Copilot)
+    end
+    subgraph Snippets
+        direction RL
+        snippets(Snippets)
+    end
+    LLM<--->context(((Developer)))
+    Copilot<--->context(((Developer)))
+    context(((Developer)))<--->Snippets
 ```
 
 ---
@@ -352,18 +369,26 @@ layout: cover
 ---
 
 ```mermaid
-%%{init: {'theme': 'neutral' } }%%
-mindmap
-  root((Context))
-    llm-model(LLM model)
-      public-cloud)Public code(
-    copilot-ide(Copilot)
-      code-ide(Code in your IDE)
-      web(Code in your browser)
-    snippets(Snippets)
-      manual-snippet(Manually added snippets)
-      browser-snippet(Browser)
-      browser-snippet(IDE)
+flowchart LR
+    subgraph LLM
+        direction LR
+        public-cloud(Public code)--->llm-model(LLM model)
+    end
+    subgraph Copilot
+        direction LR
+        code-ide(Code in your IDE)--->copilot-ide(Copilot)
+        web(Code in your browser)--->copilot-ide(Copilot)
+    end
+    subgraph Snippets
+        direction RL
+        snippets(Snippets)
+        manual-snippet(Manually added snippets)--->snippets(Snippets)
+        browser-snippet(Browser)--->snippets(Snippets)
+        ide-snippet(IDE)--->snippets(Snippets)
+    end
+    LLM<--->context(((Developer)))
+    Copilot<--->context(((Developer)))
+    context(((Developer)))<--->Snippets
 ```
 
 ---
@@ -404,19 +429,27 @@ layout: cover
 ---
 
 ```mermaid
-%%{init: {'theme': 'neutral' } }%%
-mindmap
-  root((Context))
-    LLM model
-      public-cloud)Public code(
-    Copilot
-      code-ide(Code in your IDE)
-      web(Code in your browser)
-      snippets
-    Snippets
-      manual-snippet(Manually added snippets)
-      browser-snippet(Browser)
-      browser-snippet(IDE)
+flowchart LR
+    subgraph LLM
+        direction LR
+        public-cloud(Public code)--->llm-model(LLM model)
+    end
+    subgraph Copilot
+        direction LR
+        code-ide(Code in your IDE)--->copilot-ide(Copilot)
+        web(Code in your browser)--->copilot-ide(Copilot)
+    end
+    subgraph Snippets
+        direction RL
+        snippets(Snippets)
+        manual-snippet(Manually added snippets)--->snippets(Snippets)
+        browser-snippet(Browser)--->snippets(Snippets)
+        ide-snippet(IDE)--->snippets(Snippets)
+    end
+    LLM<--->context(((Developer)))
+    Copilot<--->context(((Developer)))
+    context(((Developer)))<--->Snippets
+    Copilot<--->Snippets
 ```
 
 ---
@@ -442,20 +475,30 @@ layout: cover
 ---
 
 ```mermaid
-%%{init: {'theme': 'neutral' } }%%
-mindmap
-  root((Context))
-    LLM model
-      public-cloud)Public code(
-    Copilot
-      code-ide(Code in your IDE)
-      web(Code in your browser)
-      snippets
-      live-context(Live context)
-    Snippets
-      manual-snippet(Manually added snippets)
-      browser-snippet(Browser)
-      browser-snippet(IDE)
+flowchart LR
+    subgraph LLM
+        direction LR
+        public-cloud(Public code)--->llm-model(LLM model)
+    end
+    subgraph Copilot
+        direction LR
+        documentation(Online Docs)--->live-context(Live context)
+        collab(Collaboration tools)--->live-context(Live context)
+        live-context(Live context)--->copilot-ide(Copilot)
+        code-ide(Code in your IDE)--->copilot-ide(Copilot)
+        web(Code in your browser)--->copilot-ide(Copilot)
+    end
+    subgraph Snippets
+        direction RL
+        snippets(Snippets)
+        manual-snippet(Manually added snippets)--->snippets(Snippets)
+        browser-snippet(Browser)--->snippets(Snippets)
+        ide-snippet(IDE)--->snippets(Snippets)
+    end
+    LLM<--->context(((Developer)))
+    Copilot<--->context(((Developer)))
+    context(((Developer)))<--->Snippets
+    Copilot<--->Snippets
 ```
 
 ---
