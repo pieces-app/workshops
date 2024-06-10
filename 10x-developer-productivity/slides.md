@@ -645,4 +645,41 @@ imageWidth: 300
 
 # Conclusion
 
+AI can help you 10x your productivity
 
+---
+transition: fade
+layout: cover
+---
+
+# Leverage AI to:
+
+<v-clicks>
+
+- Research and write code
+- Stay focused using a Copilot
+- Bring together context from different sources
+
+</v-clicks>
+
+---
+transition: fade
+layout: cover
+---
+
+# Want to learn more?
+
+<div class="flex flex-col items-center">
+<QRCode
+    :width="300"
+    :height="300"
+    type="svg"
+    data="https://pieces.app"
+    :margin="10"
+    :imageOptions="{ margin: 10 }"
+    :dotsOptions="{  color: 'white' }"
+    image="/img/white-pieces-circle.png"
+/>
+
+### Pieces.app
+</div>
