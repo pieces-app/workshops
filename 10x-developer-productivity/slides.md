@@ -10,6 +10,14 @@ transition: fade
 
 Presenter title
 
+<!--
+
+Introduce yourself and this session.
+
+This session will show how AI can help you become a 10x developer.
+
+-->
+
 ---
 transition: fade
 layout: center
@@ -19,7 +27,11 @@ layout: center
 
 <!--
 
-A developers attention is in high demand - large amounts of context switching, and a sea of tools and ever growing amounts of data
+As developers, our attention is in high demand.
+
+To be productive, ideally we need to be in a state of flow - focused on the task at hand with the knowledge we need at our fingertips to solve the problems we are working on.
+
+The problem comes with having that knowledge we need at our fingertips. We end up in a sea of different tools, and are constantly context switching between them to find and understand what we need.
 
 -->
 
@@ -34,13 +46,21 @@ As an engineer, you are often in one of these 3 pillars, constantly switching be
 
 <div class="container margin-top--xlarge">
     <div v-click class="column column-left"><p align="center">Code in your IDE</p></div>
-    <div v-click class="column column-middle"><p align="center">Documentation and other resources in your browser</p></div>
-    <div v-click class="column column-right"><p align="center">Collaboration tools</p></div>
+    <div v-click class="column column-middle"><p align="center">Collaboration tools</p></div>
+    <div v-click class="column column-right"><p align="center">Documentation and other resources in your browser</p></div>
 </div>
 
 <!--
+
 As a developer you are often in one of these 3 pillars, constantly switching between them. 
-You write code in your IDE, research and read documentation in your browser, and collaborate with your team around the code in collaboration tools.
+You write code in your IDE, research and read documentation in your browser, and collaborate with your team around the code in collaboration tools like Slack or Teams.
+
+For example, you are working on a project open in VS Code. You have a ticket to work on, and have been discussing it with colleagues in Slack. They recommend you use an open source library, so you need to read the documentation for it on GitHub.
+
+As you are working, you are constantly switching - you write some code, flip back to the docs, ask a question on slack, then back to the code, re-read the question, go back over an earlier discussion, re-read the ticket, code, docs, and so on.
+
+Each context switch reduces your productivity and adds opportunity for distraction. You ask a question on slack, and 'quickly' check social media whilst you await an answer. Half an hour later you finally get out of the rabbit hole of cooking videos and read the response to your question.
+
 -->
 
 ---
@@ -49,6 +69,14 @@ layout: center
 ---
 
 # To be more productive, you need a way to handle all this context
+
+<!--
+
+To be more productive, you need a better way to handle all this context.
+
+Ideally you need a way to bring this all together so you can get relevant information using all the relevant context, and surface it where you are so you don't need to switch between tools.
+
+-->
 
 ---
 transition: fade
@@ -78,6 +106,24 @@ You are new to Flutter development, and you are adding a new page to a mobile ap
 </div>
 </div>
 
+<!--
+
+Let's think about a real world example.
+
+Imagine you are new to flutter development, and have been tasked with adding a new page to a mobile app.
+
+You need to be aware of a range of context:
+
+- The basics of flutter and Dart - not only the Dart programming language, but also the Flutter framework, and potentially iOS and Android principles if you are not used to mobile development.
+- Any existing code standards or requirements, such as a custom base page that your app uses, with details shared by a colleague
+- Documentation for any UI widgets that you are using - for example, you may be using a custom widget from a library, and need to understand how to use it
+- The design of the page. This may have been outlined and discussed in a Jira ticket, or in a design tool like Figma
+- Discussions with coworkers about this on Microsoft Teams - you may have had a discussion about the page, some Dart code, or Flutter concepts.
+
+To effectively work on this task, you need to be able to access and understand all this context quickly and easily.
+
+-->
+
 ---
 transition: fade
 layout: center
@@ -87,7 +133,8 @@ layout: center
 
 <!--
 
-You could go old school - sticky notes, note books, context switching
+You could go old school - sticky notes, note books, note taking apps like notion, all mixed with context switching between all the tools. Lots of scrolling around and searching to find things. All of this is a productivity hit, and every context switch is an opportunity to get distracted.
+
 
 -->
 
@@ -103,7 +150,7 @@ imageWidth: 300
 
 <!--
 
-AI tools can help manage all this for you.
+AI tools can help manage all this for you. AI is great at reasoning over large amounts of data. Combine an LLM that is trained on code, with an AI tool that brings in this context, and you have a powerful tool.
 
 -->
 
@@ -118,7 +165,8 @@ A good tool should help you remember what you need, then bring in more context a
 
 <!--
 
-This demo shows the ideal way for AI to assist you - remember anything, interact with everything.
+A good AI tool will help by remembering details from all this context, and allowing you to interact with all the details, augmented with an LLM.
+
 -->
 
 
@@ -135,14 +183,28 @@ With these tools, you can:
 
 - Use LLMs to research and write code
 - Integrate Copilots into your workflow
-- Manage code snippets
-- Add more context to your Copilot
+- Manage code snippets as context for your Copilot
+- Add more context from other activities to your Copilot
 
 </v-clicks>
 
 <!--
 
-Will demo using Pieces as my copilot
+By using AI, you can 10x your productivity.
+
+You start with an LLM, leveraging the knowledge they have from being trained on public code bases.
+
+You can then augment them by using them in a copilot where they are integrated into your IDE, gathering context from your workflow.
+
+Next you can add code snippets as context for your copilot. Over time developers build up a library of useful code snippets, and you can use these in your Copilot.
+
+Finally, you can add more context from other activities to your Copilot. For example, you can add context from documentation, collaboration tools, and more.
+
+And ideally, a lot of this should be as automatic as possible, requiring minimal input from you.
+
+Over the rest of this session, we will explore these concepts in more detail, and demo how you can use these tools to 10x your productivity.
+
+I'll be demoing using Pieces for Developers as my copilot
 
 -->
 
@@ -162,8 +224,14 @@ logos: [
 
 <!--
 
-LLMs have been trained on code - you can ask them code questions.
-Folks are using tools like ChatGPT, or Pieces to ask code questions - create code, understand code etc.
+LLMs have been trained on public code bases - you can ask them code questions.
+
+Folks are using tools like ChatGPT and Pieces to ask code questions.
+
+LLMs can answer all manner of questions, from researching tech stacks with questions like "what is the best way to do X in Y language" to debugging questions like "why is this code not working".
+
+LLMs can also create code for you, either completely new code, or completing some code that you are already working on.
+
 
 -->
 
@@ -178,8 +246,14 @@ flowchart LR
         direction LR
         public-cloud(Public code)--->llm-model(LLM model)
     end
-    LLM<--->context(((Developer)))
+    LLM<--->context(((10x Developer)))
 ```
+
+<!--
+
+This is the first component in your journey to being a 10x developer - leveraging an LLM to research and write code using the knowledge they have from being trained on public code bases.
+
+-->
 
 ---
 transition: fade
@@ -240,8 +314,8 @@ flowchart LR
         direction LR
         code-ide(Code in your IDE)--->copilot-ide(Copilot)
     end
-    LLM<--->context(((Developer)))
-    Copilot<--->context(((Developer)))
+    LLM<--->context(((10x Developer)))
+    Copilot<--->context(((10x Developer)))
 ```
 
 ---
@@ -255,6 +329,7 @@ Interact with a Copilot in your IDE
 <!--
 
 Demo using the Pieces copilot in VS Code.
+
 Start with using the copilot chat to ask questions about code
 Use integrations with the IDE:
 - Ask for the command to run a flutter app, run this in the terminal
@@ -279,8 +354,8 @@ flowchart LR
         code-ide(Code in your IDE)--->copilot-ide(Copilot)
         web(Code in your browser)--->copilot-ide(Copilot)
     end
-    LLM<--->context(((Developer)))
-    Copilot<--->context(((Developer)))
+    LLM<--->context(((10x Developer)))
+    Copilot<--->context(((10x Developer)))
 ```
 
 ---
@@ -341,9 +416,9 @@ flowchart LR
         direction RL
         snippets(Snippets)
     end
-    LLM<--->context(((Developer)))
-    Copilot<--->context(((Developer)))
-    context(((Developer)))<--->Snippets
+    LLM<--->context(((10x Developer)))
+    Copilot<--->context(((10x Developer)))
+    context(((10x Developer)))<--->Snippets
 ```
 
 ---
@@ -386,9 +461,9 @@ flowchart LR
         browser-snippet(Browser)--->snippets(Snippets)
         ide-snippet(IDE)--->snippets(Snippets)
     end
-    LLM<--->context(((Developer)))
-    Copilot<--->context(((Developer)))
-    context(((Developer)))<--->Snippets
+    LLM<--->context(((10x Developer)))
+    Copilot<--->context(((10x Developer)))
+    context(((10x Developer)))<--->Snippets
 ```
 
 ---
@@ -446,9 +521,9 @@ flowchart LR
         browser-snippet(Browser)--->snippets(Snippets)
         ide-snippet(IDE)--->snippets(Snippets)
     end
-    LLM<--->context(((Developer)))
-    Copilot<--->context(((Developer)))
-    context(((Developer)))<--->Snippets
+    LLM<--->context(((10x Developer)))
+    Copilot<--->context(((10x Developer)))
+    context(((10x Developer)))<--->Snippets
     Copilot<--->Snippets
 ```
 
@@ -495,9 +570,9 @@ flowchart LR
         browser-snippet(Browser)--->snippets(Snippets)
         ide-snippet(IDE)--->snippets(Snippets)
     end
-    LLM<--->context(((Developer)))
-    Copilot<--->context(((Developer)))
-    context(((Developer)))<--->Snippets
+    LLM<--->context(((10x Developer)))
+    Copilot<--->context(((10x Developer)))
+    context(((10x Developer)))<--->Snippets
     Copilot<--->Snippets
 ```
 

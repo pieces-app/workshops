@@ -25,12 +25,20 @@ To run the slides, you need to have Node.js installed. Then do the following:
 1. Open the slides in your browser at [`http://localhost:3030`](http://localhost:3030).
 1. Open the presenter mode in your browser at [`http://localhost:3030/presenter`](http://localhost:3030/presenter).
 
+The presenter mode includes the following:
+
+- Current slide, and a preview of the next slide
+- Speaker notes
+- Easy navigation controls if you need to jump around between slides
+- Annotation tools
+- A timer
+
 ## Workshop list
 
-| Workshop | Command to run | Description |
-| -------- | -------------- | ----------- |
-| [10x Your Developer Productivity with AI-Enabled Tools](./10x-developer-productivity) | `pnpm 10x` | A workshop to show how AI can help you become a 10x developer |
-| [Hands on with Pieces for Developers](./hands-on-with-pieces) | `pnpm hands-on` | A hands-on workshop to introduce Pieces |
+| Workshop | Command to run | Status | Description |
+| -------- | -------------- | ------ | ----------- |
+| [10x Your Developer Productivity with AI-Enabled Tools](./10x-developer-productivity) | `pnpm 10x` | In development | A workshop to show how AI can help you become a 10x developer |
+| [Hands on with Pieces for Developers](./hands-on-with-pieces) | `pnpm hands-on` | In development | A hands-on workshop to introduce Pieces |
 
 ## Customizing the slides
 
