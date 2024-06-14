@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'package:my_amazing_flutter_app/base_widgets.dart';
-import 'package:my_amazing_flutter_app/copilot_page.dart';
+import 'package:my_amazing_flutter_app/src/pages/base_widgets.dart';
+import 'package:my_amazing_flutter_app/src/pages/copilot_page.dart';
 
 class MyHomePage extends StatefulWidgetWithLogging {
   MyHomePage(): super(key: const Key("Home Page"));

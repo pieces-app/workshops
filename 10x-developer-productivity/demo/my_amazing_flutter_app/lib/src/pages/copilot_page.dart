@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:provider/provider.dart';
 
-import 'package:my_amazing_flutter_app/base_widgets.dart';
-import 'package:my_amazing_flutter_app/copilot_service.dart';
+import 'package:my_amazing_flutter_app/src/pages/base_widgets.dart';
+import 'package:my_amazing_flutter_app/src/services/copilot_service.dart';
 
 class CopilotPage extends StatefulWidgetWithLogging {
   CopilotPage(): super(key: const Key("Copilot page"));

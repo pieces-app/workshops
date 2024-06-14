@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:logging/logging.dart';
 import 'package:provider/provider.dart';
 
-import 'package:my_amazing_flutter_app/copilot_service.dart';
-import 'package:my_amazing_flutter_app/home_page.dart';
+import 'package:my_amazing_flutter_app/src/services/copilot_service.dart';
+import 'package:my_amazing_flutter_app/src/pages/home_page.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
