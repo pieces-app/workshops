@@ -65,15 +65,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.18.0"
-  connector_openapi:
-    dependency: "direct main"
-    description:
-      path: "sdk/http/dart/connector"
-      ref: HEAD
-      resolved-ref: "9a1693dc4565c4775e250654c17a351430e0d6a8"
-      url: "git@github.com:open-runtime/generated_runtime.git"
-    source: git
-    version: "0.0.1"
   convert:
     dependency: transitive
     description:
@@ -85,11 +76,9 @@ packages:
   core_openapi:
     dependency: "direct main"
     description:
-      path: "sdk/http/dart/core"
-      ref: HEAD
-      resolved-ref: "9a1693dc4565c4775e250654c17a351430e0d6a8"
-      url: "git@github.com:open-runtime/generated_runtime.git"
-    source: git
+      path: "../pieces_api/core"
+      relative: true
+    source: path
     version: "0.0.1"
   crypto:
     dependency: transitive
@@ -119,10 +108,10 @@ packages:
     dependency: transitive
     description:
       name: dio
-      sha256: "7d328c4d898a61efc3cd93655a0955858e29a0aa647f0f9e02d59b3bb275e2e8"
+      sha256: "11e40df547d418cc0c4900a9318b26304e665da6fa4755399a9ff9efd09034b5"
       url: "https://pub.dev"
     source: hosted
-    version: "4.0.6"
+    version: "5.4.3+1"
   fake_async:
     dependency: transitive
     description:
@@ -169,18 +158,18 @@ packages:
     dependency: transitive
     description:
       name: hotreloader
-      sha256: "728c0613556c1d153f7e7f4a367cffacc3f5a677d7f6497a1c2b35add4e6dacf"
+      sha256: ed56fdc1f3a8ac924e717257621d09e9ec20e308ab6352a73a50a1d7a4d9158e
       url: "https://pub.dev"
     source: hosted
-    version: "3.0.6"
+    version: "4.2.0"
   http:
     dependency: transitive
     description:
       name: http
-      sha256: a2bbf9d017fcced29139daa8ed2bba4ece450ab222871df93ca9eec6f80c34ba
+      sha256: "761a297c042deedc1ffbb156d6e2af13886bb305c2a343a4d972504cd67dd938"
       url: "https://pub.dev"
     source: hosted
-    version: "1.2.0"
+    version: "1.2.1"
   http_methods:
     dependency: transitive
     description:
@@ -229,6 +218,30 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.7.1"
+  leak_tracker:
+    dependency: transitive
+    description:
+      name: leak_tracker
+      sha256: "7f0df31977cb2c0b88585095d168e689669a2cc9b97c309665e3386f3e9d341a"
+      url: "https://pub.dev"
+    source: hosted
+    version: "10.0.4"
+  leak_tracker_flutter_testing:
+    dependency: transitive
+    description:
+      name: leak_tracker_flutter_testing
+      sha256: "06e98f569d004c1315b991ded39924b21af84cf14cc94791b8aea337d25b57f8"
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.0.3"
+  leak_tracker_testing:
+    dependency: transitive
+    description:
+      name: leak_tracker_testing
+      sha256: "6ba465d5d76e67ddf503e1161d1f4a6bc42306f9d66ca1e8f079a47290fb06d3"
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.0.1"
   lints:
     dependency: transitive
     description:
@@ -265,26 +278,26 @@ packages:
     dependency: transitive
     description:
       name: matcher
-      sha256: "1803e76e6653768d64ed8ff2e1e67bea3ad4b923eb5c56a295c3e634bad5960e"
+      sha256: d2323aa2060500f906aa31a895b4030b6da3ebdcc5619d14ce1aada65cd161cb
       url: "https://pub.dev"
     source: hosted
-    version: "0.12.16"
+    version: "0.12.16+1"
   material_color_utilities:
     dependency: transitive
     description:
       name: material_color_utilities
-      sha256: "9528f2f296073ff54cb9fee677df673ace1218163c3bc7628093e7eed5203d41"
+      sha256: "0e0a020085b65b6083975e499759762399b4475f766c21668c4ecca34ea74e5a"
       url: "https://pub.dev"
     source: hosted
-    version: "0.5.0"
+    version: "0.8.0"
   meta:
     dependency: transitive
     description:
       name: meta
-      sha256: a6e590c838b18133bb482a2745ad77c5bb7715fb0451209e1a7567d416678b8e
+      sha256: "7687075e408b093f36e6bbf6c91878cc0d4cd10f409506f7bc996f68220b9136"
       url: "https://pub.dev"
     source: hosted
-    version: "1.10.0"
+    version: "1.12.0"
   mime:
     dependency: transitive
     description:
@@ -313,18 +326,18 @@ packages:
     dependency: transitive
     description:
       name: openapi_dart_common
-      sha256: c163cabfd1ae4b4a7532e515a8a1fe83d60459883cd50c69d678e92dbe3f4ea0
+      sha256: cf0a92406bd367662d12fce3d3f2024339132a4524d897e14b564b46fa8b961a
       url: "https://pub.dev"
     source: hosted
-    version: "4.1.2"
+    version: "5.1.1"
   path:
     dependency: transitive
     description:
       name: path
-      sha256: "8829d8a55c13fc0e37127c29fedf290c102f4e40ae94ada574091fe0ff96c917"
+      sha256: "087ce49c3f0dc39180befefc60fdb4acd8f8620e5682fe2476afd0b3688bb4af"
       url: "https://pub.dev"
     source: hosted
-    version: "1.8.3"
+    version: "1.9.0"
   pointycastle:
     dependency: transitive
     description:
@@ -360,11 +373,9 @@ packages:
   runtime_common_library:
     dependency: "direct main"
     description:
-      path: "sdk/http/dart/common"
-      ref: HEAD
-      resolved-ref: "9a1693dc4565c4775e250654c17a351430e0d6a8"
-      url: "git@github.com:open-runtime/generated_runtime.git"
-    source: git
+      path: "../pieces_api/common"
+      relative: true
+    source: path
     version: "0.0.1"
   shelf:
     dependency: transitive
@@ -378,18 +389,18 @@ packages:
     dependency: transitive
     description:
       name: shelf_hotreload
-      sha256: ba2159781d7353aa75e86aa243a029a038ae00c50f39a238e21078c39d4d8e86
+      sha256: d7099618b18d3c63ba5272491c1812c306629495129ef9996115f0417902f963
       url: "https://pub.dev"
     source: hosted
-    version: "0.0.2"
+    version: "1.5.0"
   shelf_plus:
     dependency: transitive
     description:
       name: shelf_plus
-      sha256: c3f088a630e0927f305e79a599875bd32ec7132288303762061f399e6d2d2d0d
+      sha256: "4dba816c3584bca28ee8b31de4d08199e48c0e54db8a2ad0e94f777dd7ab625c"
       url: "https://pub.dev"
     source: hosted
-    version: "0.0.2"
+    version: "1.9.2"
   shelf_router:
     dependency: transitive
     description:
@@ -406,6 +417,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.1.2"
+  shelf_web_socket:
+    dependency: transitive
+    description:
+      name: shelf_web_socket
+      sha256: "9ca081be41c60190ebcb4766b2486a7d50261db7bd0f5d9615f2d653637a84c1"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.4"
   sky_engine:
     dependency: transitive
     description: flutter
@@ -451,14 +470,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.2.0"
-  supercharged_dart:
-    dependency: transitive
-    description:
-      name: supercharged_dart
-      sha256: cb95edda32eacd27664089700a750120be41daa84aa6cd2aeded46227c16b867
-      url: "https://pub.dev"
-    source: hosted
-    version: "2.1.1"
   tcp_scanner:
     dependency: transitive
     description:
@@ -479,10 +490,10 @@ packages:
     dependency: transitive
     description:
       name: test_api
-      sha256: "5c2f730018264d276c20e4f1503fd1308dfbbae39ec8ee63c5236311ac06954b"
+      sha256: "9955ae474176f7ac8ee4e989dadfb411a58c30415bcfb648fa04b2b8a03afa7f"
       url: "https://pub.dev"
     source: hosted
-    version: "0.6.1"
+    version: "0.7.0"
   typed_data:
     dependency: transitive
     description:
@@ -511,10 +522,10 @@ packages:
     dependency: transitive
     description:
       name: vm_service
-      sha256: c538be99af830f478718b51630ec1b6bee5e74e52c8a802d328d9e71d35d2583
+      sha256: "3923c89304b715fb1eb6423f017651664a03bf5f4b29983627c4da791f74a4ec"
       url: "https://pub.dev"
     source: hosted
-    version: "11.10.0"
+    version: "14.2.1"
   watcher:
     dependency: transitive
     description:
@@ -527,10 +538,18 @@ packages:
     dependency: transitive
     description:
       name: web
-      sha256: afe077240a270dcfd2aafe77602b4113645af95d0ad31128cc02bce5ac5d5152
+      sha256: "97da13628db363c635202ad97068d47c5b8aa555808e7a9411963c533b449b27"
       url: "https://pub.dev"
     source: hosted
-    version: "0.3.0"
+    version: "0.5.1"
+  web_socket_channel:
+    dependency: transitive
+    description:
+      name: web_socket_channel
+      sha256: "58c6666b342a38816b2e7e50ed0f1e261959630becd4c879c4f26bfa14aa5a42"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.4.5"
   x509:
     dependency: transitive
     description:
@@ -540,5 +559,5 @@ packages:
     source: hosted
     version: "0.2.4+2"
 sdks:
-  dart: ">=3.2.0 <3.3.0"
-  flutter: ">=3.16.0"
+  dart: ">=3.3.0 <3.5.0"
+  flutter: ">=3.18.0-18.0.pre.54"

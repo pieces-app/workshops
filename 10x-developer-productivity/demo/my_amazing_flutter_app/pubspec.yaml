@@ -32,18 +32,10 @@ dependencies:
     sdk: flutter
   logging: ^1.0.2
   provider: ^6.0.0
-  connector_openapi:
-    git:
-      url: git@github.com:open-runtime/generated_runtime.git
-      path: ./sdk/http/dart/connector/
   core_openapi:
-    git:
-      url: git@github.com:open-runtime/generated_runtime.git
-      path: ./sdk/http/dart/core/
+    path: ../pieces_api/core
   runtime_common_library:
-    git:
-      url: git@github.com:open-runtime/generated_runtime.git
-      path: ./sdk/http/dart/common
+    path: ../pieces_api/common
 
 
   # The following adds the Cupertino Icons font to your application.

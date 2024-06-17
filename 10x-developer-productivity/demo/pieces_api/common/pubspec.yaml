@@ -1,0 +1,34 @@
+#
+# AUTO-GENERATED FILE, DO NOT MODIFY!
+#
+
+name: "runtime_common_library"
+version: "0.0.1"
+description: "OpenAPI API client"
+homepage: "homepage"
+publish_to: none
+environment:
+  sdk: ">=3.3.0 <3.5.0"
+dependencies:
+  http: ">=0.13.0"
+  intl: "^0.17.0"
+  uuid: "3.0.6"
+  change_case: "^1.0.2"
+  regexed_validator: "^2.0.0+1"
+  openapi_dart_common: ^5.1.1
+  shelf: ^1.2.0
+  shelf_plus: ^1.9.2
+  jose: ^0.3.2
+  meta: ^1.8.0
+  highlight: ^0.7.0
+  tcp_scanner: ^2.0.5
+  logger: ^1.0.0
+  internet_connection_checker: 0.0.1+2
+
+dev_dependencies:
+  test: ">=1.16.0 <1.18.0"
+  runtime_lints: ^0.3.0
+  test_process: ^2.0.0
+  shelf_router_generator: ^1.0.0
+  envify_generator: ^2.0.2
+  build_runner: ^2.1.5
