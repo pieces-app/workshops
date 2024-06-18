@@ -283,22 +283,17 @@ Copy this sample code and paste into the app in a new page in src/pages called a
 
 Demo the new code.
 
-Uncomment the page below for a video version of this demo.
-
 -->
 
-<!--
+---
+transition: fade
+layout: center
+disabled: true
+---
 
-    ---
-    transition: fade
-    layout: center
-    ---
-
-    <video controls width="640">
-        <source src="/10x-developer-productivity/video/create-about-page.mp4" type="video/mp4">
-    </video>
-
--->
+<video controls width="640">
+    <source src="/10x-developer-productivity/video/create-about-page.mp4" type="video/mp4">
+</video>
 
 ---
 transition: fade
@@ -368,18 +363,15 @@ Use pieces comment to ask the copilot to comment the code
 
 -->
 
-<!--
+---
+transition: fade
+layout: center
+disabled: true
+---
 
-    ---
-    transition: fade
-    layout: center
-    ---
-
-    <video controls width="640">
-        <source src="/10x-developer-productivity/video/copilot-in-ide.mp4" type="video/mp4">
-    </video>
-
--->
+<video controls width="640">
+    <source src="/10x-developer-productivity/video/copilot-in-ide.mp4" type="video/mp4">
+</video>
 
 ---
 transition: fade
@@ -424,18 +416,15 @@ Use this to add an image to the about dialog using the example owl image from th
 
 -->
 
-<!--
+---
+transition: fade
+layout: center
+disabled: true
+---
 
-    ---
-    transition: fade
-    layout: center
-    ---
-
-    <video controls width="640">
-        <source src="/10x-developer-productivity/video/copilot-in-browser.mp4" type="video/mp4">
-    </video>
-
--->
+<video controls width="640">
+    <source src="/10x-developer-productivity/video/copilot-in-browser.mp4" type="video/mp4">
+</video>
 
 ---
 transition: fade
@@ -501,18 +490,15 @@ From Pieces Desktop, show the snippets
 
 -->
 
-<!--
+---
+transition: fade
+layout: center
+disabled: true
+---
 
-    ---
-    transition: fade
-    layout: center
-    ---
-
-    <video controls width="640">
-        <source src="/10x-developer-productivity/video/add-snippet-desktop.mp4" type="video/mp4">
-    </video>
-
--->
+<video controls width="640">
+    <source src="/10x-developer-productivity/video/add-snippet-desktop.mp4" type="video/mp4">
+</video>
 
 ---
 transition: fade
@@ -562,18 +548,15 @@ From the browser grab a snippet from https://api.flutter.dev/flutter/widgets/Ima
 
 -->
 
-<!--
+---
+transition: fade
+layout: center
+disabled: true
+---
 
-    ---
-    transition: fade
-    layout: center
-    ---
-
-    <video controls width="640">
-        <source src="/10x-developer-productivity/video/add-snippet-ide-browser.mp4" type="video/mp4">
-    </video>
-
--->
+<video controls width="640">
+    <source src="/10x-developer-productivity/video/add-snippet-ide-browser.mp4" type="video/mp4">
+</video>
 
 ---
 transition: fade
@@ -642,18 +625,15 @@ Use local folders in your Copilot
 
 -->
 
-<!--
+---
+transition: fade
+layout: center
+disabled: true
+---
 
-    ---
-    transition: fade
-    layout: center
-    ---
-
-    <video controls width="640">
-        <source src="/10x-developer-productivity/video/copilot-local-folder.mp4" type="video/mp4">
-    </video>
-
--->
+<video controls width="640">
+    <source src="/10x-developer-productivity/video/copilot-local-folder.mp4" type="video/mp4">
+</video>
 
 ---
 transition: fade
@@ -673,18 +653,15 @@ Use snippets in your Copilot
 
 -->
 
-<!--
+---
+transition: fade
+layout: center
+disabled: true
+---
 
-    ---
-    transition: fade
-    layout: center
-    ---
-
-    <video controls width="640">
-        <source src="/10x-developer-productivity/video/copilot-snippet.mp4" type="video/mp4">
-    </video>
-
--->
+<video controls width="640">
+    <source src="/10x-developer-productivity/video/copilot-snippet.mp4" type="video/mp4">
+</video>
 
 ---
 transition: fade
@@ -736,9 +713,19 @@ Add live context
 Show the copilot chat and show it needs a spinner whilst waiting for the context to load.
 Show a chat where someone recommends Spinkit (you will need to get this created up front)
 
-Create a new
+Create a new conversation, turn on live context, and ask what was the flutter package that was recommended to me just now (adjust the prompt to mention the tool).
 
 -->
+
+---
+transition: fade
+layout: center
+disabled: true
+---
+
+<video controls width="640">
+    <source src="/10x-developer-productivity/video/copilot-live-context.mp4" type="video/mp4">
+</video>
 
 
 ---
@@ -775,18 +762,15 @@ Create a new conversation and ask what was I doing just now in my browser
 
 -->
 
-<!--
+---
+transition: fade
+layout: center
+disabled: true
+---
 
-    ---
-    transition: fade
-    layout: center
-    ---
-
-    <video controls width="640">
-        <source src="/10x-developer-productivity/video/live-context-browser.mp4" type="video/mp4">
-    </video>
-
--->
+<video controls width="640">
+    <source src="/10x-developer-productivity/video/live-context-browser.mp4" type="video/mp4">
+</video>
 
 ---
 transition: fade
@@ -830,18 +814,15 @@ Select the getPiecesOSUrl function in copilot_service.dart and ask the copilot t
 
 -->
 
-<!--
+---
+transition: fade
+layout: center
+disabled: true
+---
 
-    ---
-    transition: fade
-    layout: center
-    ---
-
-    <video controls width="640">
-        <source src="/10x-developer-productivity/video/copilot-add-unit-test.mp4" type="video/mp4">
-    </video>
-
--->
+<video controls width="640">
+    <source src="/10x-developer-productivity/video/copilot-add-unit-test.mp4" type="video/mp4">
+</video>
 
 ---
 transition: fade
@@ -865,18 +846,15 @@ Copy this error and ask the copilot to help you fix it.
 
 -->
 
-<!--
+---
+transition: fade
+layout: center
+disabled: true
+---
 
-    ---
-    transition: fade
-    layout: center
-    ---
-
-    <video controls width="640">
-        <source src="/10x-developer-productivity/video/copilot-error-help.mp4" type="video/mp4">
-    </video>
-
--->
+<video controls width="640">
+    <source src="/10x-developer-productivity/video/copilot-error-help.mp4" type="video/mp4">
+</video>
 
 ---
 transition: fade
@@ -893,19 +871,15 @@ Demo reviewing code. Open the copilot_chat.dart file, select all the code, and a
 
 -->
 
-<!--
+---
+transition: fade
+layout: center
+disabled: true
+---
 
-    ---
-    transition: fade
-    layout: center
-    ---
-
-    <video controls width="640">
-        <source src="/10x-developer-productivity/video/copilot-review-code.mp4" type="video/mp4">
-    </video>
-
--->
-
+<video controls width="640">
+    <source src="/10x-developer-productivity/video/copilot-review-code.mp4" type="video/mp4">
+</video>
 
 ---
 transition: fade

@@ -13,6 +13,26 @@ To run this demo, you will need:
 
 ## Hands on demos
 
-The slides contain instructions for the hands on demos you can run. There is also video versions of each one available as commented out pages. Uncomment all these pages to use the video demos if required.
+The slides contain instructions for the hands on demos you can run.
+
+### Recorded demos
+
+There are video versions of each demo available with the pages marked as `disabled`:
+
+```markdown
+---
+transition: fade
+layout: center
+disabled: true
+---
+
+<video controls width="640">
+    <source src="/10x-developer-productivity/video/copilot-live-context.mp4" type="video/mp4">
+</video>
+```
+
+You can enable these by removing the `disabled: true` line. You can then 
+
+### Run the demos manually
 
 You can find the app and snippets for the demos in the [`demo`](./demo) folder. This is referenced in the slides.
