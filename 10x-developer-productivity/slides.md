@@ -920,7 +920,7 @@ layout: cover
     :width="300"
     :height="300"
     type="svg"
-    data="https://pieces.app"
+    data="https://pieces.app/?utm_source=workshops&utm_medium=presentation&utm_campaign=workshops-qr"
     :margin="10"
     :imageOptions="{ margin: 10 }"
     :dotsOptions="{  color: 'white' }"
