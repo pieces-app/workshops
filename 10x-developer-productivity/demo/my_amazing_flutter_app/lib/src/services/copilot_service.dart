@@ -6,11 +6,14 @@ import 'package:core_openapi/api/qgpt_api.dart';
 class CopilotService {
   late final QGPTApi _apiInstance;
 
-  CopilotService() {
+  String getPiecesOSUrl() {
     final platform = Platform.operatingSystem;
     final port = platform == 'linux' ? 5323 : 1000;
+    return 'http://localhost:$port';
+  }
 
-    final apiClient = ApiClient(basePath: 'http://localhost:$port');
+  CopilotService() {
+    final apiClient = ApiClient(basePath: getPiecesOSUrl());
     _apiInstance = QGPTApi(apiClient);    
   }
 
