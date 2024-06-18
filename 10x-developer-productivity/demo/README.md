@@ -8,7 +8,6 @@ This demo folder contains the following:
 
 - [`my_amazing_flutter_app`](./my_amazing_flutter_app) - The bare bones Flutter app that you will be working with.
 - [`snippets`](./snippets) - A set of snippets to add to Pieces during the demo
-- [`prompts.md`](./prompts.md) - A set of prompts to use during the demo
 
 ## App setup
 

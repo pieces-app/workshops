@@ -135,7 +135,6 @@ layout: center
 
 You could go old school - sticky notes, note books, note taking apps like notion, all mixed with context switching between all the tools. Lots of scrolling around and searching to find things. All of this is a productivity hit, and every context switch is an opportunity to get distracted.
 
-
 -->
 
 ---
@@ -278,14 +277,26 @@ Ask pieces to explain the code.
 
 If it suggests an app bar, talk about how this is not needed, so ask for the same code without the scaffold.
 
-Copy this sample code and paste into the app in a new page in src/pages called about_page.dart.
-
 Ask the copilot to change the page to have an about title and a message.
 
-Add this code to the app and demo it.
+Copy this sample code and paste into the app in a new page in src/pages called about_page.dart.
 
+Demo the new code.
 
-Need to pre-record a video of this to avoid any issues with the demo
+Uncomment the page below for a video version of this demo.
+
+-->
+
+<!--
+
+    ---
+    transition: fade
+    layout: center
+    ---
+
+    <video controls width="640">
+        <source src="/10x-developer-productivity/video/create-about-page.mp4" type="video/mp4">
+    </video>
 
 -->
 
@@ -353,7 +364,20 @@ Ask for the command to run a flutter app, run this in the terminal using the run
 
 Show code lens
 Use Pieces explain to ask the copilot to explain some other code.
-Use pieces comment to ask the copilot to comment on the code
+Use pieces comment to ask the copilot to comment the code
+
+-->
+
+<!--
+
+    ---
+    transition: fade
+    layout: center
+    ---
+
+    <video controls width="640">
+        <source src="/10x-developer-productivity/video/copilot-in-ide.mp4" type="video/mp4">
+    </video>
 
 -->
 
@@ -396,9 +420,20 @@ https://api.flutter.dev/flutter/widgets/Image-class.html
 Ask the copilot to explain the first 2 code snippets
 
 Your copilot chats should also follow you. Show copilot chat from before in the browser to continue the flutter conversation with the relevant context from the web page
-Use this to add an image to the about dialog
+Use this to add an image to the about dialog using the example owl image from the flutter docs.
 
-Use https://docs.pieces.app/assets/pieces_logos/white_wordmark.svg
+-->
+
+<!--
+
+    ---
+    transition: fade
+    layout: center
+    ---
+
+    <video controls width="640">
+        <source src="/10x-developer-productivity/video/copilot-in-browser.mp4" type="video/mp4">
+    </video>
 
 -->
 
@@ -466,6 +501,19 @@ From Pieces Desktop, show the snippets
 
 -->
 
+<!--
+
+    ---
+    transition: fade
+    layout: center
+    ---
+
+    <video controls width="640">
+        <source src="/10x-developer-productivity/video/add-snippet-desktop.mp4" type="video/mp4">
+    </video>
+
+-->
+
 ---
 transition: fade
 layout: cover
@@ -505,8 +553,25 @@ Collect snippets where you are
 
 <!--
 
+Snippets should be easy to grab so they become part of your workflow. This means snippet collection should be where you are, 
+such as in your IDE or browser.
+
+
 From the IDE grab a snippet of the copilot_service
 From the browser grab a snippet from https://api.flutter.dev/flutter/widgets/Image-class.html - the same image snippet
+
+-->
+
+<!--
+
+    ---
+    transition: fade
+    layout: center
+    ---
+
+    <video controls width="640">
+        <source src="/10x-developer-productivity/video/add-snippet-ide-browser.mp4" type="video/mp4">
+    </video>
 
 -->
 
@@ -523,6 +588,9 @@ imageWidth: 300
 <!--
 
 To make the responses from the Copilot more relevant, you need to add more context to it.
+
+For example, you might want the copilot to understand an entire project by adding the project folder to the context of the conversation.
+You might also want to add snippets, or individual files.
 
 -->
 
@@ -541,6 +609,8 @@ flowchart LR
         direction LR
         code-ide(Code in your IDE)--->copilot-ide(Copilot)
         web(Code in your browser)--->copilot-ide(Copilot)
+        folder(Local folders)--->copilot-ide(Copilot)
+        file(Local files)--->copilot-ide(Copilot)
     end
     subgraph Snippets
         direction RL
@@ -569,7 +639,19 @@ Use local folders in your Copilot
 - Create a new conversation and add the my amazing flutter app folder as context. Then ask questions:
     - Describe this app
     - what dependencies does this app have
-- Save the commented code as a new snippet
+
+-->
+
+<!--
+
+    ---
+    transition: fade
+    layout: center
+    ---
+
+    <video controls width="640">
+        <source src="/10x-developer-productivity/video/copilot-local-folder.mp4" type="video/mp4">
+    </video>
 
 -->
 
@@ -591,6 +673,19 @@ Use snippets in your Copilot
 
 -->
 
+<!--
+
+    ---
+    transition: fade
+    layout: center
+    ---
+
+    <video controls width="640">
+        <source src="/10x-developer-productivity/video/copilot-snippet.mp4" type="video/mp4">
+    </video>
+
+-->
+
 ---
 transition: fade
 layout: cover
@@ -604,11 +699,13 @@ flowchart LR
     end
     subgraph Copilot
         direction LR
-        documentation(Online Docs)--->live-context(Live context)
-        collab(Collaboration tools)--->live-context(Live context)
-        live-context(Live context)--->copilot-ide(Copilot)
         code-ide(Code in your IDE)--->copilot-ide(Copilot)
         web(Code in your browser)--->copilot-ide(Copilot)
+        folder(Local folders)--->copilot-ide(Copilot)
+        file(Local files)--->copilot-ide(Copilot)
+        live-context(Live context)---->copilot-ide(Copilot)
+        documentation(Online Docs)--->live-context(Live context)
+        collab(Collaboration tools)--->live-context(Live context)
     end
     subgraph Snippets
         direction RL
@@ -636,7 +733,10 @@ Add live context
 
 Add live context
 
-Open 
+Show the copilot chat and show it needs a spinner whilst waiting for the context to load.
+Show a chat where someone recommends Spinkit (you will need to get this created up front)
+
+Create a new
 
 -->
 
@@ -668,7 +768,23 @@ What was I doing just now?
 
 <!--
 
-Show live context by asking what was I doing
+Open https://stackoverflow.com/questions/71939373/how-to-use-overlay-spinner-in-flutter in the browser. Read the docs for a bit,
+then follow the link to spinkit on pub.dev
+
+Create a new conversation and ask what was I doing just now in my browser
+
+-->
+
+<!--
+
+    ---
+    transition: fade
+    layout: center
+    ---
+
+    <video controls width="640">
+        <source src="/10x-developer-productivity/video/live-context-browser.mp4" type="video/mp4">
+    </video>
 
 -->
 
@@ -693,7 +809,6 @@ layout: cover
 
 - Unit tests
 - Error handling
-- Automating repetitive tasks
 - Code reviews
 
 </v-clicks>
@@ -709,7 +824,22 @@ Unit tests
 
 <!--
 
-Demo adding unit tests to a code base
+Demo adding unit tests to a code base.
+
+Select the getPiecesOSUrl function in copilot_service.dart and ask the copilot to write a unit test for it. Show the explanation including how you need to mock Platform.
+
+-->
+
+<!--
+
+    ---
+    transition: fade
+    layout: center
+    ---
+
+    <video controls width="640">
+        <source src="/10x-developer-productivity/video/copilot-add-unit-test.mp4" type="video/mp4">
+    </video>
 
 -->
 
@@ -724,22 +854,27 @@ Error handling
 
 <!--
 
-Demo researching and handling errors
+Imagine you used the wrong icon name in the copilot page.
+
+Open the copilot page and change the icon to AddChat:
+
+icon: const Icon(Icons.addChat),
+
+Try to run the app and you will get an error in the debug console.
+Copy this error and ask the copilot to help you fix it.
 
 -->
 
----
-transition: fade
-layout: center
----
-
-# Demo
-
-Automating repetitive tasks
-
 <!--
 
-Demo automating something like JSON generation
+    ---
+    transition: fade
+    layout: center
+    ---
+
+    <video controls width="640">
+        <source src="/10x-developer-productivity/video/copilot-error-help.mp4" type="video/mp4">
+    </video>
 
 -->
 
@@ -754,7 +889,20 @@ Code reviews
 
 <!--
 
-Demo reviewing code
+Demo reviewing code. Open the copilot_chat.dart file, select all the code, and ask the copilot to review it.
+
+-->
+
+<!--
+
+    ---
+    transition: fade
+    layout: center
+    ---
+
+    <video controls width="640">
+        <source src="/10x-developer-productivity/video/copilot-review-code.mp4" type="video/mp4">
+    </video>
 
 -->
 
