@@ -1,24 +1,4 @@
 ---
-layout: intro
-introImage: '/img/pieces-circle.png'
-transition: fade
----
-
-# 10x Your Developer Productivity with AI-Enabled Tools
-
-### Presenter
-
-Presenter title
-
-<!--
-
-Introduce yourself and this session.
-
-This session will show how AI can help you become a 10x developer.
-
--->
-
----
 transition: fade
 layout: center
 ---
@@ -291,6 +271,26 @@ disabled: true
   <source src="/10x-developer-productivity/video/create-about-page.mp4" type="video/mp4">
 </SlidevVideo>
 
+<!--
+
+Let's use AI to add a new page to a flutter app. We need to add an about page.
+
+Open the code of the app in VS Code, and launch Pieces desktop.
+
+Ask pieces desktop how to create a new page in a flutter app. It will give sample code.
+
+Ask pieces to explain the code.
+
+If it suggests an app bar, talk about how this is not needed, so ask for the same code without the scaffold.
+
+Ask the copilot to change the page to have an about title and a message.
+
+Copy this sample code and paste into the app in a new page in src/pages called about_page.dart.
+
+Demo the new code.
+
+-->
+
 ---
 transition: fade
 layout: image-right
@@ -370,6 +370,26 @@ disabled: true
     <source src="/10x-developer-productivity/video/copilot-in-ide.mp4" type="video/mp4">
 </SlidevVideo>
 
+<!--
+
+Show the extension in the marketplace.
+Show the copilot extension in the IDE
+Show that the last Flutter conversation is there
+
+Start a new conversation - each conversation has it's own context, so adding to an existing conversation will use the answers from before,
+a new conversation will not.
+
+Copy the about text element and ask the copilot to change the text color to red.
+Delete the text and insert at cursor
+
+Ask for the command to run a flutter app, run this in the terminal using the run in terminal command
+
+Show code lens
+Use Pieces explain to ask the copilot to explain some other code.
+Use pieces comment to ask the copilot to comment the code
+
+-->
+
 ---
 transition: fade
 layout: cover
@@ -423,6 +443,21 @@ disabled: true
 <SlidevVideo v-click autoplay muted controls width="640">
     <source src="/10x-developer-productivity/video/copilot-in-browser.mp4" type="video/mp4">
 </SlidevVideo>
+
+
+<!--
+
+Same idea - your copilot should be where you are. From your browser as you research you can use the copilot.
+For example - going to the docs for a flutter widget such as icon, you can ask the copilot to explain the code in the repo.
+
+https://api.flutter.dev/flutter/widgets/Image-class.html
+
+Ask the copilot to explain the first 2 code snippets
+
+Your copilot chats should also follow you. Show copilot chat from before in the browser to continue the flutter conversation with the relevant context from the web page
+Use this to add an image to the about dialog using the example owl image from the flutter docs.
+
+-->
 
 ---
 transition: fade
@@ -499,6 +534,15 @@ disabled: true
     <source src="/10x-developer-productivity/video/add-snippet-desktop.mp4" type="video/mp4">
 </SlidevVideo>
 
+<!--
+
+From Pieces Desktop, show the snippets
+
+- Add the animated_image.dart snippet and show the annotations
+- Add the decorator box image snippet and show the annotations
+
+-->
+
 ---
 transition: fade
 layout: cover
@@ -557,6 +601,17 @@ disabled: true
 <SlidevVideo v-click autoplay muted controls width="640">
     <source src="/10x-developer-productivity/video/add-snippet-ide-browser.mp4" type="video/mp4">
 </SlidevVideo>
+
+<!--
+
+Snippets should be easy to grab so they become part of your workflow. This means snippet collection should be where you are, 
+such as in your IDE or browser.
+
+
+From the IDE grab a snippet of the copilot_service
+From the browser grab a snippet from https://api.flutter.dev/flutter/widgets/Image-class.html - the same image snippet
+
+-->
 
 ---
 transition: fade
@@ -636,6 +691,14 @@ disabled: true
     <source src="/10x-developer-productivity/video/copilot-local-folder.mp4" type="video/mp4">
 </SlidevVideo>
 
+<!--
+
+- Create a new conversation and add the my amazing flutter app folder as context. Then ask questions:
+    - Describe this app
+    - what dependencies does this app have
+
+-->
+
 ---
 transition: fade
 layout: center
@@ -663,6 +726,15 @@ disabled: true
 <SlidevVideo v-click autoplay muted controls width="640">
     <source src="/10x-developer-productivity/video/copilot-snippet.mp4" type="video/mp4">
 </SlidevVideo>
+
+<!--
+
+- Create a new conversation and add the animated image snippet, then ask a question
+    - Explain this code
+    - Comment this code
+- Save the commented code as a new snippet
+
+-->
 
 ---
 transition: fade
@@ -729,6 +801,16 @@ disabled: true
     <source src="/10x-developer-productivity/video/copilot-live-context.mp4" type="video/mp4">
 </SlidevVideo>
 
+<!--
+
+Add live context
+
+Show the copilot chat and show it needs a spinner whilst waiting for the context to load.
+Show a chat where someone recommends Spinkit (you will need to get this created up front)
+
+Create a new conversation, turn on live context, and ask what was the flutter package that was recommended to me just now (adjust the prompt to mention the tool).
+
+-->
 
 ---
 transition: fade
@@ -773,6 +855,15 @@ disabled: true
 <SlidevVideo v-click autoplay muted controls width="640">
     <source src="/10x-developer-productivity/video/live-context-browser.mp4" type="video/mp4">
 </SlidevVideo>
+
+<!--
+
+Open https://stackoverflow.com/questions/71939373/how-to-use-overlay-spinner-in-flutter in the browser. Read the docs for a bit,
+then follow the link to spinkit on pub.dev
+
+Create a new conversation and ask what was I doing just now in my browser
+
+-->
 
 ---
 transition: fade
@@ -826,6 +917,14 @@ disabled: true
     <source src="/10x-developer-productivity/video/copilot-add-unit-test.mp4" type="video/mp4">
 </SlidevVideo>
 
+<!--
+
+Demo adding unit tests to a code base.
+
+Select the getPiecesOSUrl function in copilot_service.dart and ask the copilot to write a unit test for it. Show the explanation including how you need to mock Platform.
+
+-->
+
 ---
 transition: fade
 layout: center
@@ -858,6 +957,19 @@ disabled: true
     <source src="/10x-developer-productivity/video/copilot-error-help.mp4" type="video/mp4">
 </SlidevVideo>
 
+<!--
+
+Imagine you used the wrong icon name in the copilot page.
+
+Open the copilot page and change the icon to AddChat:
+
+icon: const Icon(Icons.addChat),
+
+Try to run the app and you will get an error in the debug console.
+Copy this error and ask the copilot to help you fix it.
+
+-->
+
 ---
 transition: fade
 layout: center
@@ -882,6 +994,12 @@ disabled: true
 <SlidevVideo v-click autoplay muted controls width="640">
     <source src="/10x-developer-productivity/video/copilot-review-code.mp4" type="video/mp4">
 </SlidevVideo>
+
+<!--
+
+Demo reviewing code. Open the copilot_chat.dart file, select all the code, and ask the copilot to review it.
+
+-->
 
 ---
 transition: fade
