@@ -42,7 +42,7 @@ layout: cover
 
 # Pillars of development
 
-As an engineer, you are often in one of these 4 pillars, constantly switching between them.
+As an engineer, you are often in one of these 3 pillars, constantly switching between them.
 
 <div class="container margin-top--xlarge">
     <div v-click class="column column-left"><p align="center">Code in your IDE</p></div>
@@ -51,7 +51,6 @@ As an engineer, you are often in one of these 4 pillars, constantly switching be
 </div>
 
 <!--
-
 As a developer you are often in one of these 3 pillars, constantly switching between them. 
 You write code in your IDE, research and read documentation in your browser, and collaborate with your team around the code in collaboration tools like Slack or Teams.
 
@@ -60,7 +59,6 @@ For example, you are working on a project open in VS Code. You have a ticket to 
 As you are working, you are constantly switching - you write some code, flip back to the docs, ask a question on slack, then back to the code, re-read the question, go back over an earlier discussion, re-read the ticket, code, docs, and so on.
 
 Each context switch reduces your productivity and adds opportunity for distraction. You ask a question on slack, and 'quickly' check social media whilst you await an answer. Half an hour later you finally get out of the rabbit hole of cooking videos and read the response to your question.
-
 -->
 
 ---
@@ -71,11 +69,9 @@ layout: center
 # To be more productive, you need a way to handle all this context
 
 <!--
-
 To be more productive, you need a better way to handle all this context.
 
 Ideally you need a way to bring this all together so you can get relevant information using all the relevant context, and surface it where you are so you don't need to switch between tools.
-
 -->
 
 ---
@@ -91,6 +87,7 @@ You are new to Flutter development, and you are adding a new page to a mobile ap
     <div class="column">
 <v-clicks>
 
+- The code base for the app
 - The basics of Flutter and Dart
 - Example page shared by colleagues using a custom base page
 - Documentation for a UI widget you are using
@@ -114,6 +111,7 @@ Imagine you are new to flutter development, and have been tasked with adding a n
 
 You need to be aware of a range of context:
 
+- The code base for the app - you may have been given a link to the repo, or have it open in your IDE
 - The basics of flutter and Dart - not only the Dart programming language, but also the Flutter framework, and potentially iOS and Android principles if you are not used to mobile development.
 - Any existing code standards or requirements, such as a custom base page that your app uses, with details shared by a colleague
 - Documentation for any UI widgets that you are using - for example, you may be using a custom widget from a library, and need to understand how to use it
@@ -148,9 +146,7 @@ imageWidth: 300
 # This is where AI powered dev tools can help!
 
 <!--
-
-AI tools can help manage all this for you. AI is great at reasoning over large amounts of data. Combine an LLM that is trained on code, with an AI tool that brings in this context, and you have a powerful tool.
-
+AI tools can help manage all this for you. AI is great at reasoning over large amounts of unstructured data. Combine an LLM that is trained on code, with an AI tool that brings in this context, and you have a powerful tool.
 -->
 
 ---
@@ -291,9 +287,9 @@ layout: center
 disabled: true
 ---
 
-<video controls width="640">
-    <source src="/10x-developer-productivity/video/create-about-page.mp4" type="video/mp4">
-</video>
+<SlidevVideo v-click autoplay muted controls width="640">
+  <source src="/10x-developer-productivity/video/create-about-page.mp4" type="video/mp4">
+</SlidevVideo>
 
 ---
 transition: fade
@@ -331,6 +327,7 @@ flowchart LR
     end
     LLM<--->context(((10x Developer)))
     Copilot<--->context(((10x Developer)))
+    LLM<--->Copilot
 ```
 
 ---
@@ -369,9 +366,9 @@ layout: center
 disabled: true
 ---
 
-<video controls width="640">
+<SlidevVideo v-click autoplay muted controls width="640">
     <source src="/10x-developer-productivity/video/copilot-in-ide.mp4" type="video/mp4">
-</video>
+</SlidevVideo>
 
 ---
 transition: fade
@@ -391,6 +388,7 @@ flowchart LR
     end
     LLM<--->context(((10x Developer)))
     Copilot<--->context(((10x Developer)))
+    LLM<--->Copilot
 ```
 
 ---
@@ -422,9 +420,9 @@ layout: center
 disabled: true
 ---
 
-<video controls width="640">
+<SlidevVideo v-click autoplay muted controls width="640">
     <source src="/10x-developer-productivity/video/copilot-in-browser.mp4" type="video/mp4">
-</video>
+</SlidevVideo>
 
 ---
 transition: fade
@@ -469,6 +467,7 @@ flowchart LR
     end
     LLM<--->context(((10x Developer)))
     Copilot<--->context(((10x Developer)))
+    LLM<--->Copilot
     context(((10x Developer)))<--->Snippets
 ```
 
@@ -496,9 +495,9 @@ layout: center
 disabled: true
 ---
 
-<video controls width="640">
+<SlidevVideo v-click autoplay muted controls width="640">
     <source src="/10x-developer-productivity/video/add-snippet-desktop.mp4" type="video/mp4">
-</video>
+</SlidevVideo>
 
 ---
 transition: fade
@@ -525,6 +524,7 @@ flowchart LR
     end
     LLM<--->context(((10x Developer)))
     Copilot<--->context(((10x Developer)))
+    LLM<--->Copilot
     context(((10x Developer)))<--->Snippets
 ```
 
@@ -554,9 +554,9 @@ layout: center
 disabled: true
 ---
 
-<video controls width="640">
+<SlidevVideo v-click autoplay muted controls width="640">
     <source src="/10x-developer-productivity/video/add-snippet-ide-browser.mp4" type="video/mp4">
-</video>
+</SlidevVideo>
 
 ---
 transition: fade
@@ -604,6 +604,7 @@ flowchart LR
     end
     LLM<--->context(((10x Developer)))
     Copilot<--->context(((10x Developer)))
+    LLM<--->Copilot
     context(((10x Developer)))<--->Snippets
     Copilot<--->Snippets
 ```
@@ -631,9 +632,9 @@ layout: center
 disabled: true
 ---
 
-<video controls width="640">
+<SlidevVideo v-click autoplay muted controls width="640">
     <source src="/10x-developer-productivity/video/copilot-local-folder.mp4" type="video/mp4">
-</video>
+</SlidevVideo>
 
 ---
 transition: fade
@@ -659,9 +660,9 @@ layout: center
 disabled: true
 ---
 
-<video controls width="640">
+<SlidevVideo v-click autoplay muted controls width="640">
     <source src="/10x-developer-productivity/video/copilot-snippet.mp4" type="video/mp4">
-</video>
+</SlidevVideo>
 
 ---
 transition: fade
@@ -693,6 +694,7 @@ flowchart LR
     end
     LLM<--->context(((10x Developer)))
     Copilot<--->context(((10x Developer)))
+    LLM<--->Copilot
     context(((10x Developer)))<--->Snippets
     Copilot<--->Snippets
 ```
@@ -723,9 +725,9 @@ layout: center
 disabled: true
 ---
 
-<video controls width="640">
+<SlidevVideo v-click autoplay muted controls width="640">
     <source src="/10x-developer-productivity/video/copilot-live-context.mp4" type="video/mp4">
-</video>
+</SlidevVideo>
 
 
 ---
@@ -768,9 +770,9 @@ layout: center
 disabled: true
 ---
 
-<video controls width="640">
+<SlidevVideo v-click autoplay muted controls width="640">
     <source src="/10x-developer-productivity/video/live-context-browser.mp4" type="video/mp4">
-</video>
+</SlidevVideo>
 
 ---
 transition: fade
@@ -820,9 +822,9 @@ layout: center
 disabled: true
 ---
 
-<video controls width="640">
+<SlidevVideo v-click autoplay muted controls width="640">
     <source src="/10x-developer-productivity/video/copilot-add-unit-test.mp4" type="video/mp4">
-</video>
+</SlidevVideo>
 
 ---
 transition: fade
@@ -852,9 +854,9 @@ layout: center
 disabled: true
 ---
 
-<video controls width="640">
+<SlidevVideo v-click autoplay muted controls width="640">
     <source src="/10x-developer-productivity/video/copilot-error-help.mp4" type="video/mp4">
-</video>
+</SlidevVideo>
 
 ---
 transition: fade
@@ -877,9 +879,9 @@ layout: center
 disabled: true
 ---
 
-<video controls width="640">
+<SlidevVideo v-click autoplay muted controls width="640">
     <source src="/10x-developer-productivity/video/copilot-review-code.mp4" type="video/mp4">
-</video>
+</SlidevVideo>
 
 ---
 transition: fade
@@ -893,6 +895,10 @@ imageWidth: 300
 
 AI can help you 10x your productivity
 
+<!--
+AI is your support mechanism. It won't replace you, but can make you more productive.
+-->
+
 ---
 transition: fade
 layout: cover
@@ -905,6 +911,7 @@ layout: cover
 - Research and write code
 - Stay focused using a Copilot
 - Bring together context from different sources
+- Handle basic coding tasks
 
 </v-clicks>
 
