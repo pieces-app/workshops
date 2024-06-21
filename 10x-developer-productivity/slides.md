@@ -1,4 +1,24 @@
 ---
+layout: intro
+introImage: '/img/pieces-circle.png'
+transition: fade
+---
+
+# 10x Your Developer Productivity with AI-Enabled Tools
+
+### Presenter
+
+Presenter title
+
+<!--
+
+Introduce yourself and this session.
+
+This session will show how AI can help you become a 10x developer.
+
+-->
+
+---
 transition: fade
 layout: center
 ---
