@@ -37,7 +37,7 @@ The presenter mode includes the following:
 
 | Workshop | Command to run | Status | Description |
 | -------- | -------------- | ------ | ----------- |
-| [10x Your Developer Productivity with AI-Enabled Tools](./10x-developer-productivity) | `pnpm 10x` | In development | A workshop to show how AI can help you become a 10x developer |
+| [10x Your Developer Productivity with AI-Enabled Tools](./10x-developer-productivity) | `pnpm 10x` | Complete ✅ | A workshop to show how AI can help you become a 10x developer |
 | [Hands on with Pieces for Developers](./hands-on-with-pieces) | `pnpm hands-on` | In development | A hands-on workshop to introduce Pieces |
 
 ## Customizing the slides
