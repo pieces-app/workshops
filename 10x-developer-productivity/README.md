@@ -11,6 +11,12 @@ To run this demo, you will need:
 - This repo cloned, with the `my_amazing_flutter_app` project loaded in an IDE and able to run.
 - Start a chat with someone in a collaboration tool and ask them about a spinner to use in your app to show the copilot chat loading. Have them recommend spinkit.
 
+## Train the trainer
+
+There is a train the trainer video available to give a demonstration of this talk, with details on how to set it up.
+
+[![train the trainer video](https://img.youtube.com/vi/Cu8ckUo4m8I/0.jpg)](https://youtube.com/watch?v=Cu8ckUo4m8I "train the trainer video")
+
 ## Hands on demos
 
 The slides contain instructions for the hands on demos you can run.
