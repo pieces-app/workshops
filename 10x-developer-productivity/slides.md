@@ -207,11 +207,11 @@ I'll be demoing using Pieces for Developers as my copilot
 transition: fade
 layout: cover-logos
 logos: [
-    "/10x-developer-productivity/img/palm2.webp",
-    "/10x-developer-productivity/img/mistral.png",
-    "/10x-developer-productivity/img/Google_Gemini_logo.svg",
-    "/10x-developer-productivity/img/openai-logomark.svg",
-    "/10x-developer-productivity/img/Meta_lockup_positive primary_RGB.svg",
+    "/img/llms/palm2.webp",
+    "/img/llms/mistral.png",
+    "/img/llms/Google_Gemini_logo.svg",
+    "/img/llms/openai-logomark.svg",
+    "/img/llms/Meta_lockup_positive primary_RGB.svg",
 ]
 ---
 
