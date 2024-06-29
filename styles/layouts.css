@@ -11,6 +11,14 @@
   h1 {
     @apply text-5xl mb-6;
   }
+
+  th {
+    @apply font-bold text-white
+  }
+
+  strong {
+    @apply font-bold text-white
+  }
 }
 
 .container {
