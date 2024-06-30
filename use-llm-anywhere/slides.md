@@ -23,6 +23,8 @@ I want to ask a personal question - who has ever suffered from no internet?
 
 Trying to search for something, or do something, and you can't because you have no internet.
 
+This could be because you are on the tube, on a plane, in the middle of nowhere, or in a country with poor, expensive, or no internet.
+
 -->
 
 ---
@@ -36,6 +38,14 @@ layout : default
 How do you use these when offline?
 </v-click>
 
+<!--
+
+Who here used ChatGPT, or another large language model tool?
+
+What do you do when it's offline, or you have no internet?
+
+-->
+
 ---
 transition: fade
 layout: default
@@ -48,6 +58,7 @@ Use an LLM... offline!
 <!--
 
 Turn wifi off. 
+
 Demo asking the Pieces copilot what is an LLM, and how to use an LLM offline
 
 -->
@@ -55,16 +66,20 @@ Demo asking the Pieces copilot what is an LLM, and how to use an LLM offline
 ---
 transition: fade
 layout: center
-disabled: true
+disabled: false
 ---
 
 <SlidevVideo v-click autoplay muted controls width="640">
-    <source src="/10x-developer-productivity/video/copilot-in-ide.mp4" type="video/mp4">
+    <source src="/use-llm-anywhere/video/demo-llm-offline.mp4" type="video/mp4">
 </SlidevVideo>
 
 <!--
 
-TODO - update video
+Let's ask the LLM what is a large language model
+
+Then we ask if they can be run offline
+
+Finally we ask what are some examples of models that can run offline
 
 -->
 
@@ -142,6 +157,46 @@ transition: fade
 
 # How do you interact with an LLM?
 
+---
+transition: fade
+layout: default
+---
+
+# Demo
+
+Interact with an LLM
+
+<!--
+
+Demo asking an LLM a single long question. Note how the response streams back in real-time.
+
+Example - for example, ask the LLM how to create a dotnet console app in Visual Studio.
+
+-->
+
+---
+transition: fade
+layout: center
+disabled: false
+---
+
+<SlidevVideo v-click autoplay muted controls width="640">
+    <source src="/use-llm-anywhere/video/demo-llm-single-question.mp4" type="video/mp4">
+</SlidevVideo>
+
+<!--
+
+Here we are asking the LLM a single question - how can we create a dotnet console app in visual studio.
+
+The LLM then answers the question based off the prompt.
+
+-->
+
+---
+layout: default
+transition: fade
+---
+
 ```mermaid
 flowchart LR
     subgraph Context
@@ -164,39 +219,9 @@ Models also have a token limit for the response. For example, GPT-4o has a respo
 
 The cost of using an LLM is based on the number of tokens you use. For example, at the time of writing, GPT-4o is $5 per 1m input tokens, and $15 per 1m output tokens.
 
--->
-
----
-transition: fade
-layout: default
----
-
-# Demo
-
-Interact with an LLM
-
-<!--
-
-Demo asking an LLM a long question. Note how the response streams back in real-time.
+In the example before, the prompt asking how to create a dotnet console app in visual studio is the prompt that is encoded as tokens, then sent to the LLM.
 
 -->
-
----
-transition: fade
-layout: center
-disabled: true
----
-
-<SlidevVideo v-click autoplay muted controls width="640">
-    <source src="/10x-developer-productivity/video/copilot-in-ide.mp4" type="video/mp4">
-</SlidevVideo>
-
-<!--
-
-TODO - update video
-
--->
-
 
 ---
 layout: default
@@ -234,6 +259,55 @@ flowchart LR
     tokenstream{{Stream of tokens}} -- Decoder --> response[Text Response]
 ```
 
+---
+transition: fade
+layout: default
+---
+
+# Demo
+
+Chat with an LLM
+
+<!--
+
+Demo asking the LLM a follow on question from the previous demo. Note how the response is relevant to the conversation.
+Then ask another question that is related to the first question. Show the relationship.
+
+For example:
+
+If you asked - How do I create a dotnet console app in Visual Studio?
+
+Ask - What about using the CLI
+Does this work on all platforms?
+
+-->
+
+---
+transition: fade
+layout: center
+disabled: false
+---
+
+<SlidevVideo v-click autoplay muted controls width="640">
+    <source src="/use-llm-anywhere/video/demo-llm-follow-on-question.mp4" type="video/mp4">
+</SlidevVideo>
+
+<!--
+
+Here we are asking a follow up question, what about using the CLI.
+
+In this case the prompt contains the first question, the first answer, and the second question, all encoded as tokens and send to the LLM.
+
+We then ask one more question - does this run on all platforms.
+
+Again - we send the first question and answer, the second question and answer, and the final question.
+
+This is called the context window - the LLM uses the context window to generate a response.
+
+The issue can come when the context window is too large for the LLM. In this case, you can ask the LLM to summarize the context window so far,
+and send that with the next question. This reduces the size of the context window.
+
+-->
 
 ---
 layout: default
@@ -263,7 +337,7 @@ As you ask more questions, the answer is added to the prompt. This is how the LL
 -->
 
 ---
-layout: center
+layout: default
 transition: fade
 ---
 
@@ -296,7 +370,7 @@ As LLMs get better, they need more power - especially more GPUs and RAM.
 -->
 
 ---
-layout: center
+layout: default
 transition: fade
 ---
 
@@ -350,7 +424,13 @@ Depends on the quantization and model size
 
 Assuming 1.8 trillion parameters, 32-bit float:
 
-1.8 trillion * 32 bits = 6.5 terabytes
+1.8 trillion * 32 bits = **6.5 terabytes**
+
+</v-click>
+
+<v-click>
+
+And this is just the weights - you need more memory for the model, and the data you are working with.
 
 </v-click>
 
@@ -449,6 +529,30 @@ Compare speed depending on model size. Show memory usage of Pieces OS during the
 -->
 
 ---
+transition: fade
+layout: center
+disabled: false
+---
+
+<SlidevVideo v-click autoplay muted controls width="640">
+    <source src="/use-llm-anywhere/video/demo-local-llm.mp4" type="video/mp4">
+</SlidevVideo>
+
+<!--
+
+Here we are switching to an off line LLM. We start with Phi-2, an LLM from Microsoft.
+
+We ask how to create a flask app in Python. This is running using 5GB of RAM.
+
+This LLM can answer a range of questions, not just tech questions. For example some fun things to do in London.
+
+Phi-2 is a 2.7B LLM. We can also use Llama at 7B parameters. In this case asking how to create an ASP.NET app.
+
+This uses 8.25GB of RAM, so more than Phi-2, but still within the 24GB of RAM on my laptop, so any 16GB laptop should run this fine!
+
+-->
+
+---
 layout: default
 transition: fade
 ---
@@ -466,6 +570,41 @@ Ask the audience for a question, and ask the SLM. Time it and look at the amount
 Select a cloud LLM and ask the same question in a new conversation. Time it and again compare the detail.
 
 Repeat for a few questions.
+
+-->
+
+---
+transition: fade
+layout: center
+disabled: false
+---
+
+<v-click>
+
+<div class="container margin-top--xlarge">
+    <div class="column">
+        <SlidevVideo autoplay muted controls width="320">
+            <source src="/use-llm-anywhere/video/demo-local-llm-performance.mp4" type="video/mp4">
+        </SlidevVideo>
+    </div>
+    <div class="column">
+        <SlidevVideo autoplay muted controls width="320">
+            <source src="/use-llm-anywhere/video/demo-remote-llm-performance.mp4" type="video/mp4">
+        </SlidevVideo>
+    </div>
+</div>
+
+</v-click>
+
+<!--
+
+Here I am asking both Phi and GPT-4o the same question - how to create a python flask app.
+
+The LLM is much faster - yes we are making a network hop, but the LLM is running in the cloud on a GPU cluster.
+
+This video was actually recorded on a very slow WiFi connection, and is still much faster.
+
+As well as being faster, the output is more detailed. The code is the same but GPT-4o also gives an explanation.
 
 -->
 
