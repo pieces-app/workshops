@@ -66,7 +66,7 @@ Demo asking the Pieces copilot what is an LLM, and how to use an LLM offline
 ---
 transition: fade
 layout: center
-disabled: false
+disabled: true
 ---
 
 <SlidevVideo v-click autoplay muted controls width="640">
@@ -177,7 +177,7 @@ Example - for example, ask the LLM how to create a dotnet console app in Visual 
 ---
 transition: fade
 layout: center
-disabled: false
+disabled: true
 ---
 
 <SlidevVideo v-click autoplay muted controls width="640">
@@ -285,7 +285,7 @@ Does this work on all platforms?
 ---
 transition: fade
 layout: center
-disabled: false
+disabled: true
 ---
 
 <SlidevVideo v-click autoplay muted controls width="640">
@@ -531,7 +531,7 @@ Compare speed depending on model size. Show memory usage of Pieces OS during the
 ---
 transition: fade
 layout: center
-disabled: false
+disabled: true
 ---
 
 <SlidevVideo v-click autoplay muted controls width="640">
@@ -576,7 +576,7 @@ Repeat for a few questions.
 ---
 transition: fade
 layout: center
-disabled: false
+disabled: true
 ---
 
 <v-click>
