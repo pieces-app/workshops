@@ -37,7 +37,7 @@ disabled: true
 </video>
 ```
 
-You can enable these by removing the `disabled: true` line. You can then 
+You can enable these by removing the `disabled: true` line. You can then use these videos in place of the live demos. When you navigate to the relevant slide, pressing next slide will play the video.
 
 ### Run the demos manually
 

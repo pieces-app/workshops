@@ -9,18 +9,9 @@ To run this demo, you will need:
 - Pieces installed and running locally. You can download it from [pieces.app](https://pieces.app).
 - The offline LLMs installed. Pieces supports a number of these so download them all through the desktop app.
 
-
-
-
-
-
-
-
 ## Train the trainer
 
-There is a train the trainer video available to give a demonstration of this talk, with details on how to set it up.
-
-[![train the trainer video](https://img.youtube.com/vi/Cu8ckUo4m8I/0.jpg)](https://youtube.com/watch?v=Cu8ckUo4m8I "train the trainer video")
+Coming soon
 
 ## Hands on demos
 
@@ -42,8 +33,8 @@ disabled: true
 </video>
 ```
 
-You can enable these by removing the `disabled: true` line. You can then 
+You can enable these by removing the `disabled: true` line. You can then use these videos in place of the live demos. When you navigate to the relevant slide, pressing next slide will play the video.
 
 ### Run the demos manually
 
-You can find the app and snippets for the demos in the [`demo`](./demo) folder. This is referenced in the slides.
+To run the demos manually, use the prompts given in the speaker notes, or ask the audience for some demo ideas.

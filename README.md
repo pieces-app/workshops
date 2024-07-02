@@ -39,7 +39,7 @@ The presenter mode includes the following:
 | -------- | -------------- | ------ | ----------- |
 | [10x Your Developer Productivity with AI-Enabled Tools](./10x-developer-productivity) | `pnpm 10x` | Complete ✅ | A workshop to show how AI can help you become a 10x developer |
 | [Hands on with Pieces for Developers](./hands-on-with-pieces)                         | `pnpm hands-on` | In development | A hands-on workshop to introduce Pieces |
-| [Use an LLM anywhere with offline AI](./use-llm-anywhere)                             | `pnpm use-llm-anywhere` | In development | A talk to show how to use an LLM model offline |
+| [Use an LLM anywhere with offline AI](./use-llm-anywhere)                             | `pnpm use-llm-anywhere` | Awaiting Train the Trainer video | A talk to show how to use an LLM model offline |
 
 ## Customizing the slides
 

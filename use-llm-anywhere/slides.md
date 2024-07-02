@@ -626,10 +626,9 @@ SLMs are not as good as an LLM, so why would you use one?
 </v-clicks>
 
 <!--
-
 As we've seen, SLMs are good, but not as good as an SLM. So why would we use one?
 
-THe first reason is lack of internet access. Not a huge problem in the developed world unless you are on a tube, in the middle of the countryside, or on a plane.
+The first reason is lack of internet access. Not a huge problem in the developed world unless you are on a tube, in the middle of the countryside, or on a plane.
 However, in the developing world, internet access is not as common. SLMs can be used in these areas.
 
 One example - students in developing nations, such as across Africa. Internet can be expensive or unavailable outside of the college campus. Imagine being able to use the campus internet to download a model, then use it offline at home.
@@ -640,7 +639,6 @@ Finally privacy. When you use an LLM in the cloud, you are sending data such as 
 You can also use offline models with sensitive or private data. For example, teachers asking for summarizations of report cards or requirements for students with special needs. This is protected by law in many countries, and sending this data to the cloud could be a breach of the law as well as student/parent/teacher trust. Same with medical data. criminal records or secret government data.
 
 By using an SLM you can keep your data on your device.
-
 -->
 
 ---
@@ -679,6 +677,3 @@ layout: cover
 
 ### Pieces.app
 </div>
-
-
-
