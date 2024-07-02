@@ -12,6 +12,8 @@ You can find more details about setting up and running each workshop in the resp
 
 ## Run the slides
 
+Each workshop has pre-requisites, defined in the README in the relevant folder. This list what you need, such as a specific development tool, or downloaded LLMs. Make sure you work through these before running the slides.
+
 To run the slides, you need to have Node.js installed. Then do the following:
 
 1. From your terminal, navigate to the workshop folder you want to run.
@@ -35,10 +37,11 @@ The presenter mode includes the following:
 
 ## Workshop list
 
-| Workshop | Command to run | Status | Description |
-| -------- | -------------- | ------ | ----------- |
-| [10x Your Developer Productivity with AI-Enabled Tools](./10x-developer-productivity) | `pnpm 10x` | Complete ✅ | A workshop to show how AI can help you become a 10x developer |
-| [Hands on with Pieces for Developers](./hands-on-with-pieces) | `pnpm hands-on` | In development | A hands-on workshop to introduce Pieces |
+| Workshop | Folder | Command to run | Status | Description |
+| -------- | ------ | -------------- | ------ | ----------- |
+| [10x Your Developer Productivity with AI-Enabled Tools](./10x-developer-productivity) | [`10x-developer-productivity`](./10x-developer-productivity) | `pnpm 10x`              | Complete ✅ | A workshop to show how AI can help you become a 10x developer |
+| [Hands on with Pieces for Developers](./hands-on-with-pieces)                         | [`hands-on-with-pieces`](./hands-on-with-pieces)             | `pnpm hands-on`         | In development | A hands-on workshop to introduce Pieces |
+| [Use an LLM anywhere with offline AI](./use-llm-anywhere)                             | [`use-llm-anywhere`](./use-llm-anywhere)                     | `pnpm use-llm-anywhere` | Awaiting Train the Trainer video | A talk to show how to use an LLM model offline |
 
 ## Customizing the slides
 
