@@ -170,7 +170,17 @@ Interact with an LLM
 
 Demo asking an LLM a single long question. Note how the response streams back in real-time.
 
+This should be a single question, not a chat - chat is covered in the next few slides.
+
 Example - for example, ask the LLM how to create a dotnet console app in Visual Studio.
+
+In this case we are asking a question that has a long answer, potentially with code snippets.
+
+You will see the response is streaming in - the LLM returns the response in chunks as this is generated, as opposed to a single response.
+This is different from calling a standard REST API for example, where you get back a single response with all the content.
+
+The response has a mixture of text and code as relevant - this is formatted so whatever tool you are using to interact with the LLM can display it correctly.
+
 
 -->
 
@@ -518,13 +528,15 @@ Use different LLMs... offline!
 
 <!--
 
-I'm going to use Pieces for this first demo - it supports a range of LLMs locally and in the cloud.
+I'm going to use Pieces for this demo - it supports a range of LLMs locally and in the cloud.
 
 Make sure WiFi is off.
 
 Pick each LLM and ask it a question. Ask the audience for ideas as to what to ask. Cover both technical (generating code) and non-technical questions.
 
 Compare speed depending on model size. Show memory usage of Pieces OS during the process
+
+Pieces will also recommend the LLM to use based off your device - so it won't recommend a larger model if you don't have the memory to run it.
 
 -->
 
