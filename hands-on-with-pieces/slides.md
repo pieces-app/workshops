@@ -118,6 +118,7 @@ layout: cover
 - Use Pieces to summarize long PDFs and e-books.
 - Save time and focus on key concepts.
 - Generate summaries for quick revision.
+- Ask your doubts to Pieces Co-pilot
 
 </v-clicks>
     </div>
@@ -233,7 +234,7 @@ logos:
 
 - Improved Hands-On Labs
 - Coding Practices
-- Choose your favorite LLMs from lot of options
+- Choose your favorite LLMs from lot of options (both Cloud and On-device)
 
 </v-clicks>
 
@@ -310,7 +311,7 @@ layout: center
 
 # Demo
 
-Collect snippets where you are
+Collect snippets from where you are/ active file
 
 <!--
 
@@ -422,6 +423,7 @@ layout: cover
 - Unit tests
 - Error handling
 - Code reviews
+- Write Code Comments
 
 </v-clicks>
 
@@ -550,6 +552,22 @@ imageHeight: 300
 imageWidth: 300
 ---
 
+# Demo
+
+Write Code Comments
+
+<!--
+
+Demo reviewing code. Open the copilot_chat.dart file, select some part of the code, and ask the copilot to write comments for it.
+
+-->
+
+---
+transition: fade
+layout: center
+disabled: true
+---
+
 # Conclusion
 
 AI can help you 10x your productivity
@@ -568,6 +586,7 @@ layout: cover
 <v-clicks>
 
 - Research and write code
+- Write Documentation for your project
 - Stay focused using a Copilot
 - Bring together context from different sources
 - Handle basic coding tasks
