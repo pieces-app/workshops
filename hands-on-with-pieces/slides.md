@@ -161,9 +161,18 @@ Are you struggling with a concept? Pieces' AI can explain code snippets, helping
 
 Working on a group project? Share your best code snippets with your team effortlessly. Collaboration just got way easier.
 
-using Pieces as support/learning tool but not as cheating tool..
+using Pieces as support/learning tool but not as cheating tool.
+-->
 
-2 separate slides here...............
+---
+transition: fade
+layout: center
+---
+
+# Use Pieces as your Supporting Friend / Companion not as a cheating tool
+
+<!--
+Pieces is Your Friend/ Companion whoom you can ask for help, suggestion and guidance. But it's not a cheating tool which do all your homeworks or assignments
 -->
 
 ---
@@ -233,6 +242,7 @@ logos:
   ]
 ---
 
+
 # What More?
 
 <v-clicks>
@@ -262,31 +272,30 @@ layout: center
 
 Pieces can be very handy during hackathons.
 
+<v-clicks>
+
+- Pieces can help you to plan your hackathon project.
+
+- Pieces speeds up writing project documentation, crucial for hackathons with tight deadlines.
+
+- Use AI to fix bug faster and save time.
+
+- Share Code snippets using Pieces.
+
+- "Live Context" in Pieces helps you resume projects seamlessly where you left off after short breaks during hackathons.
+
+- Create scripts to pitch your project in the Hackathon.
+
+</v-clicks>
+
 <!--
 Pieces can help you plan small projects faster. 
 
 Pieces can help in writing project documentation faster because hackathons always have short deadlines.
 
-Prototype application, Team collaboration, Picking up where you left, Project planning, Hackathon Idea, During hackathon use Pieces to solve bugs, test few project features..........
--->
+Talk about the "Live Context" feature in Pieces that allows participants to pick up right where they left off
 
----
-transition: fade
-layout: center
----
-
-# Exam and Interview Preprations 
-
-Use AI to prepare and learn new concepts
-
-<!--
-AI can be a learning tool, not a cheating tool! You can prepare for exams and learn new concepts.
-
-Pieces can help you in preparing for interviews by generating questions and answers based on your tech stack.
-
-Based on job descriptions you can even plan and edit your resume to amplify your chances to get a interview call using AI.
-
-bullets here................
+Conclude by mentioning how Pieces can help in creating effective pitch scripts for presenting the project at the end of the hackathon.
 -->
 
 ---
@@ -319,19 +328,28 @@ transition: fade
 layout: center
 ---
 
-# Demo
+# Exam and Interview Preprations 
 
-Collect snippets from where you are/ active file
+Use AI to prepare and learn new concepts
+
+<v-clicks>
+
+- Generate practice problems and exercises tailored to needs
+
+- Summarize study materials for quick revision.
+
+- Get explanations for difficult concepts and topics.
+
+- Improve your resume based on job descriptions to increase your chances of getting an interview call.
+
+</v-clicks>
 
 <!--
-Snippets should be easy to grab so they become part of your workflow. This means snippet collection should be where you are, 
-such as in your IDE or browser.
+AI can be a learning tool, not a cheating tool! You can prepare for exams and learn new concepts.
 
+Pieces can help you in preparing for interviews by generating questions and answers based on your tech stack.
 
-From the IDE grab a snippet of the copilot_service
-From the browser grab a snippet from https://api.flutter.dev/flutter/widgets/Image-class.html - the same image snippet
-
-clarity............
+Based on job descriptions you can even plan and edit your resume to amplify your chances to get a interview call using AI.
 -->
 
 ---
@@ -350,8 +368,31 @@ To make the responses from the Copilot more relevant, you need to add more conte
 For example, you might want the copilot to understand an entire project by adding the project folder to the context of the conversation.
 You might also want to add snippets, or individual files.
 
-research, assignment, project........ change the position
 -->
+
+
+---
+transition: fade
+layout: center
+---
+
+# Demo
+
+Collect snippets from where you are / active file
+
+<!--
+Snippets should be easy to grab so they become part of your workflow. This means snippet collection should be where you are, 
+such as in your IDE or browser.
+
+
+From the IDE grab a snippet of the copilot_service
+From the browser grab a snippet from https://api.flutter.dev/flutter/widgets/Image-class.html - the same image snippet
+
+In this demo, we will demonstrate how to efficiently collect code snippets from your active file, whether you are working in an Integrated Development Environment (IDE) or a web browser. You can use chrome extension, Vs Code extension or others but all snippets will be stored in one place.  
+
+-->
+
+
 
 ---
 transition: fade
@@ -367,25 +408,6 @@ Use local files/folders in your Copilot
 - Create a new conversation and add the my amazing flutter app folder or file as context. Then ask questions:
     - Describe this app
     - what dependencies does this app have
-
--->
-
-
----
-transition: fade
-layout: center
----
-
-# Demo
-
-Use snippets in your Copilot
-
-<!--
-
-- Create a new conversation and add the animated image snippet, then ask a question
-    - Explain this code
-    - Comment this code
-- Save the commented code as a new snippet
 
 -->
 
@@ -429,10 +451,11 @@ layout: cover
 
 <v-clicks>
 
-- Unit tests
-- Error handling
+- Open-source PR reviews
+- Project documentation
 - Code reviews
 - Write Code Comments
+- Error handling
 
 </v-clicks>
 
@@ -440,8 +463,6 @@ layout: cover
 Open-source PR reviews, help in code reviews, and Project documentation.
 
 Plan a quick README or use Pieces live context to get info based on new project documentation and implement those concepts in your new project.
-
-oss, project, instead.............
 -->
 
 ---
@@ -451,13 +472,14 @@ layout: center
 
 # Demo
 
-Unit tests
+Use snippets in your Copilot
 
 <!--
 
-Demo adding unit tests to a code base.
-
-Select the getPiecesOSUrl function in copilot_service.dart and ask the copilot to write a unit test for it. Show the explanation including how you need to mock Platform.
+- Create a new conversation and add the animated image snippet, then ask a question
+    - Explain this code
+    - Comment this code
+- Save the commented code as a new snippet
 
 -->
 
