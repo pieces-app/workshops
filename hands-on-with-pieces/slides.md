@@ -151,6 +151,7 @@ imageWidth: 300
 - Annotate snippets with comments and tags.
 - Ask Copilot to help explain code parts or small topics.
 - Ask academics-related doubts using multiple LLMs
+- Use Pieces to break down 
 
 </v-clicks>
     </div>
@@ -159,6 +160,10 @@ imageWidth: 300
 Are you struggling with a concept? Pieces' AI can explain code snippets, helping you understand complex parts of your assignment. It's like having a tutor on standby.
 
 Working on a group project? Share your best code snippets with your team effortlessly. Collaboration just got way easier.
+
+using Pieces as support/learning tool but not as cheating tool..
+
+2 separate slides here...............
 -->
 
 ---
@@ -244,6 +249,8 @@ Pieces can be used to practice more coding questions or academic-related prepara
 You can choose from the options of LLMs. 
 
 Show Demo of generating multiple questions for practice related to certain topic
+
+Switch to offline LLMs in absence of internet.
 -->
 
 ---
@@ -259,6 +266,8 @@ Pieces can be very handy during hackathons.
 Pieces can help you plan small projects faster. 
 
 Pieces can help in writing project documentation faster because hackathons always have short deadlines.
+
+Prototype application, Team collaboration, Picking up where you left, Project planning, Hackathon Idea, During hackathon use Pieces to solve bugs, test few project features..........
 -->
 
 ---
@@ -276,8 +285,9 @@ AI can be a learning tool, not a cheating tool! You can prepare for exams and le
 Pieces can help you in preparing for interviews by generating questions and answers based on your tech stack.
 
 Based on job descriptions you can even plan and edit your resume to amplify your chances to get a interview call using AI.
---> 
 
+bullets here................
+-->
 
 ---
 transition: fade
@@ -314,7 +324,6 @@ layout: center
 Collect snippets from where you are/ active file
 
 <!--
-
 Snippets should be easy to grab so they become part of your workflow. This means snippet collection should be where you are, 
 such as in your IDE or browser.
 
@@ -322,6 +331,7 @@ such as in your IDE or browser.
 From the IDE grab a snippet of the copilot_service
 From the browser grab a snippet from https://api.flutter.dev/flutter/widgets/Image-class.html - the same image snippet
 
+clarity............
 -->
 
 ---
@@ -335,14 +345,13 @@ imageWidth: 300
 # Add more context to your Copilot
 
 <!--
-
 To make the responses from the Copilot more relevant, you need to add more context to it.
 
 For example, you might want the copilot to understand an entire project by adding the project folder to the context of the conversation.
 You might also want to add snippets, or individual files.
 
+research, assignment, project........ change the position
 -->
-
 
 ---
 transition: fade
@@ -431,6 +440,8 @@ layout: cover
 Open-source PR reviews, help in code reviews, and Project documentation.
 
 Plan a quick README or use Pieces live context to get info based on new project documentation and implement those concepts in your new project.
+
+oss, project, instead.............
 -->
 
 ---
