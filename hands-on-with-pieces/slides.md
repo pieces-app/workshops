@@ -141,10 +141,10 @@ imageHeight: 300
 imageWidth: 300
 ---
 
-# Assignment Preparation
+# Use Pieces as your Supporting Companion
 
-<div class="container margin-top--xlarge">
-<v-clicks>
+<!--
+Pieces is Your Friend/ Companion whom you can ask for help, suggestion and guidance. But it's not a cheating tool which do all your homeworks or assignments
 
 - Save and organize code snippets from tutorials.
 - Easily access and reuse snippets in projects.
@@ -153,26 +153,9 @@ imageWidth: 300
 - Ask academics-related doubts using multiple LLMs
 - Use Pieces to break down 
 
-</v-clicks>
-    </div>
-
-<!--
 Are you struggling with a concept? Pieces' AI can explain code snippets, helping you understand complex parts of your assignment. It's like having a tutor on standby.
 
 Working on a group project? Share your best code snippets with your team effortlessly. Collaboration just got way easier.
-
-using Pieces as support/learning tool but not as cheating tool.
--->
-
----
-transition: fade
-layout: center
----
-
-# Use Pieces as your Supporting Friend / Companion not as a cheating tool
-
-<!--
-Pieces is Your Friend/ Companion whoom you can ask for help, suggestion and guidance. But it's not a cheating tool which do all your homeworks or assignments
 -->
 
 ---
@@ -208,26 +191,8 @@ With Pieces, you can:
 - Generate examples and practice problems on the fly.
 - Summarize lecture notes for quick review.
 
-
 </v-clicks>
 
-<!--
-By using AI, you can 10x your productivity.
-
-You start with an LLM, leveraging the knowledge they have from being trained on public code bases.
-
-You can then augment them by using them in a copilot where they are integrated into your IDE, gathering context from your workflow.
-
-Next you can add code snippets as context for your copilot. Over time developers build up a library of useful code snippets, and you can use these in your Copilot.
-
-Finally, you can add more context from other activities to your Copilot. For example, you can add context from documentation, collaboration tools, and more.
-
-And ideally, a lot of this should be as automatic as possible, requiring minimal input from you.
-
-Over the rest of this session, we will explore these concepts in more detail, and demo how you can use these tools to 10x your productivity.
-
-I'll be demoing using Pieces for Developers as my copilot
--->
 
 ---
 transition: fade
@@ -265,7 +230,7 @@ Switch to offline LLMs in absence of internet.
 
 ---
 transition: fade
-layout: center
+layout: cover
 ---
 
 # Hackathons 
@@ -307,7 +272,6 @@ layout: center
 Interact with a Copilot in your IDE
 
 <!--
-
 Demo using the Pieces copilot in VS Code.
 
 Show the extension in the marketplace.
@@ -319,13 +283,12 @@ a new conversation will not.
 
 
 Use Pieces explain to ask the copilot to explain some other code.
-Use pieces comment to ask the copilot to comment the codein VS
-
+Use pieces comment to ask the copilot to comment the code in VS
 -->
 
 ---
 transition: fade
-layout: center
+layout: cover
 ---
 
 # Exam and Interview Preprations 
@@ -442,12 +405,6 @@ imageWidth: 300
 
 # More advanced uses of AI in development
 
----
-transition: fade
-layout: cover
----
-
-# Some more advanced uses of AI:
 
 <v-clicks>
 
@@ -455,7 +412,6 @@ layout: cover
 - Project documentation
 - Code reviews
 - Write Code Comments
-- Error handling
 
 </v-clicks>
 
@@ -472,104 +428,7 @@ layout: center
 
 # Demo
 
-Use snippets in your Copilot
-
-<!--
-
-- Create a new conversation and add the animated image snippet, then ask a question
-    - Explain this code
-    - Comment this code
-- Save the commented code as a new snippet
-
--->
-
----
-transition: fade
-layout: center
-disabled: true
----
-
-<SlidevVideo v-click autoplay muted controls width="640">
-    <source src="/10x-developer-productivity/video/copilot-add-unit-test.mp4" type="video/mp4">
-</SlidevVideo>
-
-<!--
-
-Demo adding unit tests to a code base.
-
-Select the getPiecesOSUrl function in copilot_service.dart and ask the copilot to write a unit test for it. Show the explanation including how you need to mock Platform.
-
--->
-
----
-transition: fade
-layout: center
----
-
-# Demo
-
-Error handling
-
-<!--
-
-Imagine you used the wrong icon name in the copilot page.
-
-Open the copilot page and change the icon to AddChat:
-
-icon: const Icon(Icons.addChat),
-
-Try to run the app and you will get an error in the debug console.
-Copy this error and ask the copilot to help you fix it.
-
--->
-
----
-transition: fade
-layout: center
-disabled: true
----
-
-<SlidevVideo v-click autoplay muted controls width="640">
-    <source src="/10x-developer-productivity/video/copilot-error-help.mp4" type="video/mp4">
-</SlidevVideo>
-
-<!--
-
-Imagine you used the wrong icon name in the copilot page.
-
-Open the copilot page and change the icon to AddChat:
-
-icon: const Icon(Icons.addChat),
-
-Try to run the app and you will get an error in the debug console.
-Copy this error and ask the copilot to help you fix it.
-
--->
-
----
-transition: fade
-layout: center
----
-
-# Demo
-
 Code reviews
-
-<!--
-
-Demo reviewing code. Open the copilot_chat.dart file, select all the code, and ask the copilot to review it.
-
--->
-
----
-transition: fade
-layout: center
-disabled: true
----
-
-<SlidevVideo v-click autoplay muted controls width="640">
-    <source src="/10x-developer-productivity/video/copilot-review-code.mp4" type="video/mp4">
-</SlidevVideo>
 
 <!--
 
