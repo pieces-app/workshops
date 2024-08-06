@@ -37,11 +37,11 @@ The presenter mode includes the following:
 
 ## Workshop list
 
-| Workshop | Folder | Command to run | Status | Description |
-| -------- | ------ | -------------- | ------ | ----------- |
-| [10x Your Developer Productivity with AI-Enabled Tools](./10x-developer-productivity) | [`10x-developer-productivity`](./10x-developer-productivity) | `pnpm 10x`              | Complete ✅ | A workshop to show how AI can help you become a 10x developer |
-| [Hands on with Pieces for Developers](./hands-on-with-pieces)                         | [`hands-on-with-pieces`](./hands-on-with-pieces)             | `pnpm hands-on`         | In development | A hands-on workshop to introduce Pieces |
-| [Use an LLM anywhere with offline AI](./use-llm-anywhere)                             | [`use-llm-anywhere`](./use-llm-anywhere)                     | `pnpm use-llm-anywhere` | Awaiting Train the Trainer video | A talk to show how to use an LLM model offline |
+| Workshop                                                                                     | Folder                                                         | Command to run             | Status                           | Description |
+| -------------------------------------------------------------------------------------------- | -------------------------------------------------------------- | -------------------------- | -------------------------------- | ----------- |
+| [10x Your Developer Productivity with AI-Enabled Tools](./10x-developer-productivity)        | [`10x-developer-productivity`](./10x-developer-productivity).  | `pnpm 10x`                 | Complete ✅                      | A workshop to show how AI can help you become a 10x developer |
+| [Supercharge your student journey with Pieces for Developers](./supercharge-student-journey) | [`supercharge-student-journey`](./supercharge-student-journey) | `pnpm supercharge-student` | In development                   | A hands-on workshop to introduce Pieces |
+| [Use an LLM anywhere with offline AI](./use-llm-anywhere)                                    | [`use-llm-anywhere`](./use-llm-anywhere)                       | `pnpm use-llm-anywhere`    | Awaiting Train the Trainer video | A talk to show how to use an LLM model offline |
 
 ## Customizing the slides
 
@@ -95,7 +95,7 @@ To add a workshop, do the following:
     {
         "scripts": {
             "dev10x": "slidev --config 10x-developer-productivity.md",
-            "hands-on": "slidev --config hands-on-with-pieces.md",
+            "hands-on": "slidev --config supercharge-student-journey.md",
             "new-workshop": "slidev --config <new workshop>.md"
         }
     }
