@@ -980,3 +980,10 @@ layout: cover
 
 ### Pieces.app/discord
 </div>
+
+---
+transition: fade
+layout: cover
+---
+
+# Q&A
