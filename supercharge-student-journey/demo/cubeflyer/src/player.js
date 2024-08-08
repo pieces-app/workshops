@@ -15,9 +15,9 @@ class Player extends GameObject {
         this.velocity = new BABYLON.Vector3(0, 0);
         this.setupInputs();
 
-        // Create the player object - a 1 unit sphere
-        const sphereOptions = { diameter: 1 };
-        this.playerMesh = BABYLON.MeshBuilder.CreateSphere("bird", sphereOptions, scene);
+        // Create the player object - a 1 unit cube
+        const boxOptions = { size: 1 };
+        this.playerMesh = BABYLON.MeshBuilder.CreateBox("bird", boxOptions, scene);
         this.playerMaterial = new BABYLON.StandardMaterial("Player Material", scene);
         this.playerMesh.material = this.playerMaterial;
         this.playerMesh.material.diffuseColor = BABYLON.Color3.White();

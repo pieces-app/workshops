@@ -152,7 +152,7 @@ You can select from a range of LLMs, both on-line and offline.
 ---
 transition: fade
 layout: center-no-header-footer
-disabled: false
+disabled: true
 ---
 
 <SlidevVideo v-click autoplay muted controls width="750">
@@ -224,7 +224,7 @@ Show the augmented code
 ---
 transition: fade
 layout: center-no-header-footer
-disabled: false
+disabled: true
 ---
 
 <SlidevVideo v-click autoplay muted controls width="750">
@@ -246,7 +246,7 @@ Pieces supports capturing code snippets from your browser or IDE, or from code f
 ---
 transition: fade
 layout: center-no-header-footer
-disabled: false
+disabled: true
 ---
 
 <SlidevVideo v-click autoplay muted controls width="750">
@@ -285,7 +285,7 @@ When shared, all the metadata is also shared.
 ---
 transition: fade
 layout: center-no-header-footer
-disabled: false
+disabled: true
 ---
 
 <SlidevVideo v-click autoplay muted controls width="750">
@@ -322,7 +322,7 @@ Demo adding a tag for a DSA-101 class ID
 ---
 transition: fade
 layout: center-no-header-footer
-disabled: false
+disabled: true
 ---
 
 <SlidevVideo v-click autoplay muted controls width="750">
@@ -408,7 +408,7 @@ Walk through the breakdown.
 ---
 transition: fade
 layout: center-no-header-footer
-disabled: false
+disabled: true
 ---
 
 <SlidevVideo v-click autoplay muted controls width="750">
@@ -449,7 +449,7 @@ Use the code lens to comment the code. Then annotate with the annotate button th
 ---
 transition: fade
 layout: center-no-header-footer
-disabled: false
+disabled: true
 ---
 
 <SlidevVideo v-click autoplay muted controls width="750">
@@ -499,7 +499,7 @@ It then summarizes the prompt.
 ---
 transition: fade
 layout: center-no-header-footer
-disabled: false
+disabled: true
 ---
 
 <SlidevVideo v-click autoplay muted controls width="750">
@@ -583,7 +583,7 @@ It will describe the project, so work through the output
 ---
 transition: fade
 layout: center-no-header-footer
-disabled: false
+disabled: true
 ---
 
 <SlidevVideo v-click autoplay muted controls width="750">
@@ -622,7 +622,7 @@ From Pieces, head to the binary tree snippet and translate the code. Once transl
 ---
 transition: fade
 layout: center-no-header-footer
-disabled: false
+disabled: true
 ---
 
 <SlidevVideo v-click autoplay muted controls width="750">
@@ -665,7 +665,7 @@ Show the generated code.
 ---
 transition: fade
 layout: center-no-header-footer
-disabled: false
+disabled: true
 ---
 
 <SlidevVideo v-click autoplay muted controls width="750">
@@ -706,7 +706,7 @@ Delete the original code and insert the new code at cursor.
 ---
 transition: fade
 layout: center-no-header-footer
-disabled: false
+disabled: true
 ---
 
 <SlidevVideo v-click autoplay muted controls width="750">
@@ -731,6 +731,7 @@ layout: cover
 - The copilot can translate code from one language to another
 - It can also generate new code for your project
 - You can edit existing code with the copilot
+- Pieces can summarize team chats that you missed
 
 </v-clicks>
 
@@ -786,7 +787,7 @@ Show the output. You can also play around with asking for another problem withou
 ---
 transition: fade
 layout: center-no-header-footer
-disabled: false
+disabled: true
 ---
 
 <SlidevVideo v-click autoplay muted controls width="750">
@@ -825,7 +826,7 @@ This is a solution to the two sum problem. Review this code and provide a more o
 ---
 transition: fade
 layout: center-no-header-footer
-disabled: false
+disabled: true
 ---
 
 <SlidevVideo v-click autoplay muted controls width="750">
@@ -866,7 +867,7 @@ This is a powerful way to quickly get more answers as you are learning concepts.
 ---
 transition: fade
 layout: center-no-header-footer
-disabled: false
+disabled: true
 ---
 
 <SlidevVideo v-click autoplay muted controls width="750">
@@ -948,7 +949,7 @@ layout: cover
 <QRCode
     :width="280"
     :height="280"
-    type="svg"
+    type="png"
     data="https://pieces.app/?utm_source=workshops&utm_medium=presentation&utm_campaign=workshops-qr"
     :margin="10"
     :imageOptions="{ margin: 10 }"
@@ -970,7 +971,7 @@ layout: cover
 <QRCode
     :width="280"
     :height="280"
-    type="svg"
+    type="png"
     data="https://pieces.app/discord"
     :margin="10"
     :imageOptions="{ margin: 10 }"

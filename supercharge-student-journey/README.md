@@ -9,6 +9,7 @@ To run this demo, you will need:
 - Pieces installed and running locally. You can download it from [pieces.app](https://pieces.app).
 - Pieces Chrome/Edge and VS code extensions installed for showing demos
 - [This gist](https://gist.github.com/jimbobbennett/d414fa175390f7dc7524952ae8ddbf9d) open in your browser
+- [This wikipedia article](https://en.wikipedia.org/wiki/Binary_search_tree) open in your browser
 - The Cubeflyer game from the [./demo/cubeflyer](./demo/cubeflyer/) open in VS Code
 - The `binary-tree.py` and `brute-force.py` files open in VS Code
 
