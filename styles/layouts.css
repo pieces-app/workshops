@@ -77,3 +77,21 @@
 .column-middle {
   border-right: 1px solid #ccc;
 }
+
+.bottom-image {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000; /* Ensure it's on top of other elements */
+}
+
+.full-screen-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the entire screen without distortion */
+  z-index: 1000; /* Ensure it's on top of other elements */
+}

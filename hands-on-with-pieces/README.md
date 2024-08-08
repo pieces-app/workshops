@@ -1,1 +1,0 @@
-# Hands on with Pieces for Developers
