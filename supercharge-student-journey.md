@@ -2,7 +2,7 @@
 theme: unicorn
 logoHeader: '/img/white-pieces-for-developers.svg'
 website: 'pieces.app'
-handle: 'jimbobbennett'
+handle: 'getpieces'
 colorSchema: 'dark'
 
 fonts:

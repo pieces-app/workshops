@@ -949,7 +949,7 @@ layout: cover
 <QRCode
     :width="280"
     :height="280"
-    type="png"
+    type="svg"
     data="https://pieces.app/?utm_source=workshops&utm_medium=presentation&utm_campaign=workshops-qr"
     :margin="10"
     :imageOptions="{ margin: 10 }"
@@ -971,7 +971,7 @@ layout: cover
 <QRCode
     :width="280"
     :height="280"
-    type="png"
+    type="svg"
     data="https://pieces.app/discord"
     :margin="10"
     :imageOptions="{ margin: 10 }"
