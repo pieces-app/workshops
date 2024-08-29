@@ -96,7 +96,7 @@ To add a workshop, do the following:
     {
         "scripts": {
             "dev10x": "slidev --config 10x-developer-productivity.md",
-            "hands-on": "slidev --config hands-on-with-pieces.md",
+            "hands-on": "slidev --config supercharge-student-journey.md",
             "new-workshop": "slidev --config <new workshop>.md"
         }
     }
