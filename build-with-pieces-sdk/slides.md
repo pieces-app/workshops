@@ -29,16 +29,9 @@ class: "flex items-center justify-center"
 
 <!--
 
-Pieces for Developers is an AI-powered tool designed to help developers, from students and hobbyists to professional developers, and even other users streamline their workflow and boost productivity. 
+Pieces for Developers is an AI-powered tool crafted to assist developers at all levels—from students and hobbyists to seasoned professionals—in streamlining their workflow and enhancing productivity.
 
-Unlike typical AI coding tools, Pieces is designed to understand the entire context of your workflow. This means you can share code snippets, code files and project folders, and even have it interact with all the apps that are running on your computer.
-
-Let's look at using Pieces in a variety of scenarios:
-
-- How it can assist you in the classroom and lectures
-- How you can use it for self guided learning
-- Using it for hackathons
-- Preparing for exams and interviews
+Unlike conventional AI programming tools, Pieces is uniquely designed to grasp the full context of your workflow. Whether you're conducting research or writing code in your IDE, Pieces maintains a comprehensive understanding of your activities. This allows you to seamlessly share code snippets, code files, and project folders, and even enables interaction with all the applications running on your computer.
 
 -->
 
@@ -108,7 +101,7 @@ There are endless possibilities of what you can build with Pieces OS SDK. You ca
 transition: fade
 ---
 
-Infact a few of Pieces extensions/plugins have been developed using the Pieces OS SDK including: 
+Infact a few of Pieces extensions/plugins have been developed using the Pieces OS SDK and are completely open source. Here are some including: 
 
 <v-clicks>
 
@@ -159,158 +152,130 @@ Every API requires a specific model to facilitate sending requests. For more inf
 transition: fade
 ---
 
-# API Client Setup
+# Quickstart with Pieces OS Client Python SDK
+
+The Pieces OS Client SDK has a built-in wrapper that simplifies the process of interacting with the Pieces OS server and using the Python SDK. 
+
+You can initialize the PiecesClient and use the APIs provided by the SDK to interact with Pieces OS.
 
 ```
-import pieces_os_client
-import platform
+from pieces_os_client.wrapper import PiecesClient
 
-platform_info = platform.platform()
-port = 5323 if 'Linux' in platform_info else 1000
-configuration = pieces_os_client.Configuration(host=f"http://localhost:{port}")
-api_client = pieces_os_client.ApiClient(configuration)
+# Initialize the PiecesClient
+pieces_client = PiecesClient()
 
 ```
 
 <!--
-Here's how to set up the API Client:
-1. We import the necessary modules.
-2. We determine the correct port based on the operating system.
-3. We create a configuration with the appropriate host.
-4. Finally, we initialize the Pieces ApiClient with this configuration.
+The PiecesClient is a wrapper that simplifies the process of interacting with the Pieces OS server and using the Python SDK. It provides a set of methods to interact with the Pieces OS server.
 
-This API Client will be used for all subsequent requests to Pieces OS.
+You can initialize the PiecesClient and use the APIs provided by the SDK to interact with Pieces OS.
+
+After you have finished using the Pieces Client, you should always close the client to free up resources.
 -->
 
 ---
 transition: fade
 ---
 
-# Connector API
+# Asset Management
 
-The Connector API is crucial for defining your application's interaction with Pieces OS.
-
-```
-import platform
-
-local_os = platform.system().upper()
-local_os = "MACOS" if local_os == "DARWIN" else local_os
-
-api_instance = pieces_os_client.ConnectorApi(api_client)
-
-seeded_connector_connection = pieces_os_client.SeededConnectorConnection(
-    application=pieces_os_client.SeededTrackedApplication(
-        name=ApplicationNameEnum.OPEN_SOURCE,
-        platform=local_os,
-        version="1.0.0"
-    )
-)
-
-api_response = api_instance.connect(seeded_connector_connection=seeded_connector_connection)
-application = api_response.application
-application_id = application.id
+Pieces OS Client Python SDK provides you API endpoints to manage your assets.
 
 ```
+from pieces_os_client.wrapper import PiecesClient
+from pieces_os_client import ClassificationSpecificEnum, FragmentMetadata
 
+# Initialize the PiecesClient
+pieces_client = PiecesClient()
+
+# Set the content and metadata for the new asset
+content = "print('Hello, World!')"
+metadata = FragmentMetadata(ext=ClassificationSpecificEnum.PY) # optional metadata
+
+# Create the new asset using the content and metadata
+new_asset_id = pieces_client.create_asset(content, metadata)
+
+print(f"Created asset with ID: {new_asset_id}")
+
+# Close the client
+pieces_client.close()
+```
 
 <!--
-The Connector API is crucial for defining your application's interaction with Pieces OS:
-1. We determine the operating system.
-2. We create a ConnectorApi instance.
-3. We set up a SeededConnectorConnection with application details.
-4. We connect to Pieces OS and get back an application object.
+Pieces OS Client Python SDK provides you API endpoints to manage your assets. You can create new assets, update and fetch all of your assets using these set of endpoints. 
 
-The application model is essential for many API requests, providing context about the origin of snippets and other data.
+These endpoints are useful for managing your saved materials inside of Pieces.
 -->
 
 ---
 transition: fade
 ---
 
-# Wellknown API
+# LLM Management
+
+The Pieces Python SDK provides methods to share list of available LLMs and select the current LLM
 ```
-from pieces_os_client import WellKnownApi
-version = WellKnownApi(api_client).get_well_known_version()
-health = WellKnownApi(api_client).get_well_known_health()
-```
+from pieces_os_client.wrapper import PiecesClient
+from pieces_os_client import ClassificationSpecificEnum, FragmentMetadata
 
+# Initialize the PiecesClient
+pieces_client = PiecesClient()
 
+# Get all models and print their names
+models = pieces_client.get_models()
+for model_name, model_id in models.items():
+    print(model_name)
 
-<!--
-The Wellknown API provides two important endpoints:
-1. get_well_known_version(): Returns the current Pieces OS version.
-2. get_well_known_health(): Checks the health status of Pieces OS.
+# Set the current LLM
+pieces_client.model_name = "your_model_name"
 
-These are useful for ensuring your application is compatible with the current Pieces OS version and that the service is running correctly.
--->
-
----
-transition: fade
----
-
-# Models API
-
-The Models API is crucial for working with the cloud and the local AI models in Pieces OS. 
-
-```
-from pieces_os_client import ModelsApi
-
-models = ModelsApi(api_client).models_snapshot()
-
-for model in models.iterable:
-    print(model.name, model.id)
-
-# Filter for installed or cloud models
-for model in models.iterable:
-    if model.cloud or model.downloaded:
-        print(model.name, model.id)
-
+# Close the client
+pieces_client.close()
 ```
 
 
 <!--
-The Models API is crucial for working with AI models in Pieces OS:
+The LLM Management APIs are crucial for working with AI models in Pieces OS:
 1. We get a snapshot of all available AI models.
 2. We can iterate through these models to see their names and IDs.
-3. We can also filter for only installed or cloud models.
+3. We can select a specific model that we wish to use for Pieces Copilot chats. 
 
-This information is essential for the QGPT API, where you'll need to specify which model to use for queries.
 -->
 
 ---
 transition: fade
 ---
 
-# QGPT API: Stream Endpoint
+# Copilot Chats
 
-The QGPT API's Stream endpoint allows for real-time chatting with the Pieces Copilot. 
+The Copilot Chat endpoints provides methods to communicate with Pieces Copilot. You can ask questions to Pieces Copilot using the `stream_question()` method. These methods are powered by the underlying QGPT endpoints. 
 
 ```
-from pieces_os_client import QGPTStreamOutput, QGPTStreamInput
-from websocket import WebSocketConnectionClosedException
+from pieces_os_client.wrapper import PiecesClient
 
-class AskStreamWS:
-    # ... (WebSocket handling code) ...
+# Initialize the PiecesClient
+pieces_client = PiecesClient()
 
-ws = AskStreamWS()
-ws.send_message(
-    QGPTStreamInput(
-        question=QGPTQuestionInput(
-            query="Hi how are you",
-            application=application.id,
-            model=model.id
-        ),
-        conversation=conversation_id,
-    )
-)
+# Set the question you want to ask
+question = "What is Object-Oriented Programming?"
+
+# Ask the question and stream the response
+for response in pieces_client.copilot.stream_question(question):
+   if response.question:
+         # Each answer is a chunk of the entire response to the question
+         answers = response.question.answers.iterable
+         for answer in answers:
+            print(answer.text,end="")
+
+pieces_client.close()
 ```
-
 
 <!--
-The QGPT API's Stream endpoint allows for real-time chatting with the Copilot:
-1. We create a WebSocket class to handle the connection.
-2. We can send messages to the QGPT API stream.
-3. The conversation_id can be obtained from the conversations endpoint or left as None to start a new conversation.
+The Copilot chat endpoint provides methods which allows for real-time chatting with the Copilot:
+1. The stream_question() requires a question as a parameter and will stream the response.
+2. The chats() method returns a list of all chats.
+3. You can fetch messages from a specific chat add further messages to a given chat
 
 This setup allows for interactive, streaming responses from the AI model.
 -->
