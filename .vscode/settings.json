@@ -10,5 +10,7 @@
         "quickstart",
         "Slidev",
         "webp"
-    ]
+    ],
+    "pieces.cloudCapabilities": "Blended",
+    "pieces.telemetry": true
 }

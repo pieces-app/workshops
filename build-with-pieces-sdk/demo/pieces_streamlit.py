@@ -1,7 +1,7 @@
 import streamlit as st
 from pieces_os_client.wrapper import PiecesClient
 
-pieces_client = PiecesClient(config={'baseUrl': 'http://localhost:1000'})
+pieces_client = PiecesClient()
 
 st.title("Pieces Copilot Streamlit Bot")
 
