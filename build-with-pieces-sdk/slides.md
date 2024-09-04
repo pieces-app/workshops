@@ -17,11 +17,15 @@ The pieces_os_client Python SDK is a powerful tool for integrating Pieces OS fun
 ---
 transition: fade
 layout: center
+class: "flex items-center justify-center"
 ---
 
 # What is Pieces?
 
+<a href="https://docs.pieces.app/installation-getting-started/what-am-i-installing" target="_blank" class="download-link">https://docs.pieces.app/installation-getting-started/what-am-i-installing</a>
+
 <img class='bottom-image' width='400' src='/build-with-pieces-sdk/img/Robot_CTA_Coffee_DM.webp'/>
+
 
 <!--
 
@@ -35,6 +39,26 @@ Let's look at using Pieces in a variety of scenarios:
 - How you can use it for self guided learning
 - Using it for hackathons
 - Preparing for exams and interviews
+
+-->
+
+---
+transition: fade
+---
+
+# What is Pieces OS?
+
+Pieces OS is a critical component of the Pieces productivity suite. It functions as a background service that operates locally on a developer's machine, facilitating communication between various elements of the Pieces ecosystem and managing integrations. This service is essential for running the Pieces applications and any associated plugins.
+
+<!--->
+
+Pieces OS is a critical component of the Pieces productivity suite designed for developers. It functions as a background service that operates locally on a developer's machine, facilitating communication between various elements of the Pieces ecosystem and managing integrations. This service is essential for running the Pieces applications and any associated plugins.
+
+Key Features of Pieces OS:
+
+Local Operation: Pieces OS enables all Pieces extensions/plugins and local machine learning models to operate entirely on the user's device, ensuring data privacy and security. Users can also opt to connect to the cloud for features like backup and sharing.
+
+Integration Management: It manages interactions between different components of the Pieces suite, allowing for seamless integration with various development tools and environments. This includes real-time search capabilities and suggestions tailored to the user's workflow.
 
 -->
 
@@ -63,7 +87,7 @@ transition: fade
 
 # What type of applications can be built with Pieces OS SDK?
 
-There are endless possibilities of what you can build with Pieces OS SDK. You can leverage the LLMs provided by Pieces OS to create conversational AI assistants, or use Pieces OS to integrate with your existing apps. Here are some potential examples for apps you build using Pieces OS SDKs:
+There are endless possibilities of what you can build with Pieces OS SDK. You can leverage the LLMs provided by Pieces OS to create conversational AI assistants, or use Pieces OS to integrate with your existing apps. Here are some potential examples for apps you build using Pieces OS SDKs: 
 
 <v-clicks>
 
@@ -80,6 +104,19 @@ There are endless possibilities of what you can build with Pieces OS SDK. You ca
 - Create a tool that automatically generates documentation based on the codebase and comments. The application can utilize Pieces OS to analyze code and produce structured documentation.
 
 -->
+---
+transition: fade
+---
+
+Infact a few of Pieces extensions/plugins have been developed using the Pieces OS SDK including: 
+
+<v-clicks>
+
+- [Pieces Sublime Plugin](https://github.com/pieces-app/plugin_sublime) 
+- [Pieces Neovim Plugin](https://github.com/pieces-app/plugin_neo_vim) 
+- [Pieces Raycast Extension](https://github.com/raycast/extensions/blob/main/extensions/pieces-raycast)
+
+</v-clicks>
 
 ---
 transition: fade
@@ -90,7 +127,7 @@ transition: fade
 Install the SDK using pip:
 
 ```
-pip install pieces-os-client
+pip install pieces_os_client
 ```
 
 <!--
@@ -285,7 +322,7 @@ layout: center
 
 # Let's now build our first application powered by Pieces OS SDK application!
 
-<img class='bottom-image' width='500' src='/build-with-pieces-sdk/img/Robot_Sitting_at_Desk_DM.webp'/>
+<img class='bottom-image' width='300' src='/build-with-pieces-sdk/img/Robot_Sitting_at_Desk_DM.webp'/>
 
 ---
 transition: fade
@@ -304,14 +341,14 @@ Streamlit is an open-source Python framework for data scientists and AI/ML engin
 
 ---
 transition: fade
-layout: center-no-header-footer
-disabled: false
+layout: center
+class: "flex items-center justify-center"
 ---
 
 
-<SlidevVideo v-click autoplay muted controls width="750">
-  <source src="/build-with-pieces-sdk/video/streamlit-demo.mp4" type="video/mp4">
-</SlidevVideo>
+<SlidevVideo v-click autoplay muted controls width="750" class="m-auto">
+  <source src="https://s3-us-west-2.amazonaws.com/assets.streamlit.io/videos/hero-video.mp4" type="video/mp4">
+</SlidevVideo>0
 
 <!--
  Streamlit provides a simple and intuitive interface for building data apps, and it can be used to create interactive dashboards, data visualizations, and more. It provides a wide range of features, including the ability to create custom widgets, integrate with other libraries, and deploy apps to the web or mobile devices.
