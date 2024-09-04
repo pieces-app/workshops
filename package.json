@@ -7,7 +7,7 @@
     "dev": "slidev --open",
     "export": "slidev export",
     "10x": "slidev --open 10x-developer-productivity.md",
-    "hands-on": "slidev --open hands-on-with-pieces.md",
+    "supercharge-student": "slidev --open supercharge-student-journey.md",
     "use-llm-anywhere": "slidev --open use-llm-anywhere.md",
     "build-with-pieces-sdk": "slidev --open build-with-pieces-sdk.md"
   },
