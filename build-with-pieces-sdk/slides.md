@@ -16,8 +16,6 @@ The pieces_os_client Python SDK is a powerful tool for integrating Pieces OS fun
 
 ---
 transition: fade
-layout: center
-class: "flex items-center justify-center"
 ---
 
 # What is Pieces?
@@ -210,6 +208,32 @@ These endpoints are useful for managing your saved materials inside of Pieces.
 
 ---
 transition: fade
+layout: center
+---
+
+# Demo
+
+Interact with assets using Pieces OS SDK
+
+---
+transition: fade
+layout: center
+disabled: true
+---
+
+<SlidevVideo v-click autoplay muted controls width="640">
+    <source src="/build-with-pieces-sdk/video/asset-selection.mp4" type="video/mp4">
+</SlidevVideo>
+
+<!--
+
+- Create a new asset 
+- Show all of the assets present in Pieces
+
+-->
+
+---
+transition: fade
 ---
 
 # LLM Management
@@ -234,7 +258,6 @@ pieces_client.model_name = "your_model_name"
 pieces_client.close()
 ```
 
-
 <!--
 The LLM Management APIs are crucial for working with AI models in Pieces OS:
 1. We get a snapshot of all available AI models.
@@ -245,11 +268,36 @@ The LLM Management APIs are crucial for working with AI models in Pieces OS:
 
 ---
 transition: fade
+layout: center
+---
+
+# Demo
+
+Learn how to choose a LLM using Pieces OS SDK
+
+---
+transition: fade
+layout: center
+disabled: true
+---
+
+<SlidevVideo v-click autoplay muted controls width="640">
+    <source src="/build-with-pieces-sdk/video/llm-selection.mp4" type="video/mp4">
+</SlidevVideo>
+
+<!--
+
+- Show list of all LLMs in Pieces 
+- Choose a LLM to use in Pieces Copilot chats
+-->
+
+---
+transition: fade
 ---
 
 # Copilot Chats
 
-The Copilot Chat endpoints provides methods to communicate with Pieces Copilot. You can ask questions to Pieces Copilot using the `stream_question()` method. These methods are powered by the underlying QGPT endpoints. 
+The Copilot Chat endpoints provides methods to communicate with Pieces Copilot. You can ask questions to Pieces Copilot using the `stream_question()` method. These methods are powered by the underlying [QGPT](https://docs.pieces.app/build/glossary/terms/quantized-generative-pre-trained-transformer) [APIs inside](https://docs.pieces.app/build/reference/python/apis/QGPTApi) Pieces OS. 
 
 ```
 from pieces_os_client.wrapper import PiecesClient
@@ -285,6 +333,31 @@ transition: fade
 layout: center
 ---
 
+# Demo
+
+Learn how to create a Copilot chat using Pieces OS SDK
+
+---
+transition: fade
+layout: center
+disabled: true
+---
+
+<SlidevVideo v-click autoplay muted controls width="640">
+    <source src="/build-with-pieces-sdk/video/copilot-chat.mp4" type="video/mp4">
+</SlidevVideo>
+
+<!--
+
+- Ask Pieces Copilot a Question and stream the response 
+- Show all of the PiecesCopilot chats
+-->
+
+---
+transition: fade
+layout: center
+---
+
 # Let's now build our first application powered by Pieces OS SDK application!
 
 <img class='bottom-image' width='300' src='/build-with-pieces-sdk/img/Robot_Sitting_at_Desk_DM.webp'/>
@@ -303,13 +376,6 @@ Streamlit is an open-source Python framework for data scientists and AI/ML engin
 <!--
 Streamlit is an open-source Python framework for data scientists and AI/ML engineers to deliver dynamic data apps with only a few lines of code. You can build and deploy powerful data apps in minutes.
 -->
-
----
-transition: fade
-layout: center
-class: "flex items-center justify-center"
----
-
 
 <SlidevVideo v-click autoplay muted controls width="750" class="m-auto">
   <source src="https://s3-us-west-2.amazonaws.com/assets.streamlit.io/videos/hero-video.mp4" type="video/mp4">
