@@ -313,7 +313,7 @@ class: "flex items-center justify-center"
 
 <SlidevVideo v-click autoplay muted controls width="750" class="m-auto">
   <source src="https://s3-us-west-2.amazonaws.com/assets.streamlit.io/videos/hero-video.mp4" type="video/mp4">
-</SlidevVideo>0
+</SlidevVideo>
 
 <!--
  Streamlit provides a simple and intuitive interface for building data apps, and it can be used to create interactive dashboards, data visualizations, and more. It provides a wide range of features, including the ability to create custom widgets, integrate with other libraries, and deploy apps to the web or mobile devices.
