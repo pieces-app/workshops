@@ -43,7 +43,7 @@ transition: fade
 
 Pieces OS is a critical component of the Pieces productivity suite. It functions as a background service that operates locally on a developer's machine, facilitating communication between various elements of the Pieces ecosystem and managing integrations. This service is essential for running the Pieces applications and any associated plugins.
 
-<!--->
+<!--
 
 Pieces OS is a critical component of the Pieces productivity suite designed for developers. It functions as a background service that operates locally on a developer's machine, facilitating communication between various elements of the Pieces ecosystem and managing integrations. This service is essential for running the Pieces applications and any associated plugins.
 
