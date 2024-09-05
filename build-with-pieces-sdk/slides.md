@@ -137,7 +137,7 @@ The `pieces_os_client` SDK consists of:
 
 - **API Client**: Essential for all requests, storing crucial data such as the host.
 - **Models**: Define the structure of the response body sent to the Pieces OS API.
-- **APIs**: Modules offering diverse functionalities (e.g., AssetsAPI, QGPTApi).
+- **APIs**: Modules offering diverse functionalities (e.g., APIs for managing assets such as code snippets, interacting with the copilot).
 
 <!--
 The SDK is composed of three main elements:
