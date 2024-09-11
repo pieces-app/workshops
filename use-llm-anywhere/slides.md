@@ -42,6 +42,8 @@ How do you use these when offline?
 
 Who here used ChatGPT, or another large language model tool?
 
+These are important in our developer workflow - we use them all the time to write code, understand documentation and other tasks.
+
 What do you do when it's offline, or you have no internet?
 
 -->
@@ -61,6 +63,7 @@ Turn wifi off.
 
 Demo asking the Pieces copilot what is an LLM, and how to use an LLM offline
 
+Let's be more developer focused - ask what programming languages folks use and ask questions.
 -->
 
 ---
@@ -108,13 +111,12 @@ transition: fade
 
 - A model that can understand and generate human language
 - Trained on a massive dataset of text - think the entire internet, terabytes of data
-- Examples: GPT-4o, Palm, Mistral, Gemini, Phi-2
+- Examples: GPT-4o, Claude, Gemini
 
 </v-clicks>
 
 <!--
-
-LLMs are AI models that excel at natural language processing. You interact with them using a prompt in natural language, and they generate a response in natural language.
+LLMs are AI models that excel at natural language processing. You interact with them using a prompt in natural language, and they generate a response in natural language. Like a really fancy autocomplete.
 
 They are trained on a massive dataset of text, which is why they are so good at understanding and generating human language. This includes pretty much the entire internet, so terabytes of data.
 
@@ -178,6 +180,7 @@ In this case we are asking a question that has a long answer, potentially with c
 
 You will see the response is streaming in - the LLM returns the response in chunks as this is generated, as opposed to a single response.
 This is different from calling a standard REST API for example, where you get back a single response with all the content.
+Like a human talking - the response has a logical flow with later text dependent on earlier
 
 The response has a mixture of text and code as relevant - this is formatted so whatever tool you are using to interact with the LLM can display it correctly.
 
@@ -222,6 +225,7 @@ flowchart LR
 <!--
 
 LLMs work with tokens instead of raw text. Tokens can be letters, or even whole words. Each LLM has a different tokenization scheme. Tokens are important models have token limits, and charge per token.
+Think of tokens like learning to read - you learn letters and sounds like ch and sh. Then when you build a word like chat, you learn it's ch a t, not c h a t.
 
 For example, GPT-4o has an input token limit of 128k tokens - this is known as the context window. If you exceed this limit, the model will truncate the input or error.
 
@@ -290,6 +294,11 @@ If you asked - How do I create a dotnet console app in Visual Studio?
 Ask - What about using the CLI
 Does this work on all platforms?
 
+Ask for all answers in the style of obi-wan Kenobi
+Ask about testing frameworks
+
+Change LLM
+Ask about UI testing
 -->
 
 ---
@@ -344,6 +353,9 @@ flowchart LR
 
 As you ask more questions, the answer is added to the prompt. This is how the LLM can generate responses that are relevant to the conversation. System prompt, then user prompt for the first question, then system prompt, user prompt, response, next user prompt for the second question, and so on.
 
+Over time, this gets bigger and bigger
+
+Demo changing LLM and the prompt still being relevant
 -->
 
 ---
@@ -353,11 +365,14 @@ transition: fade
 
 # How do LLMs run?
 
+<v-click>
 GPUs. Lots of GPUs.
+</v-click>
 
 <!--
+LLMs typically run in the cloud using a lot of GPUs. This is why NVIDIA is worth so much and the stock has doubled recently.
 
-LLMs typically run in the cloud using a lot of GPUs. How many? 
+How many? 
 
 This is not public knowledge, but some guesses recon to run a single GPT-3 query takes at least 8 top of the range A100 GPUs with 80GB of RAM each.
 GPT-3 - we've gone much further since then.
@@ -377,6 +392,7 @@ Not cheap! One of these is $17k on amazon.
 
 As LLMs get better, they need more power - especially more GPUs and RAM.
 
+We need a lot as LLMs are big, very very big
 -->
 
 ---
@@ -426,7 +442,7 @@ layout: cover
 transition: fade
 ---
 
-# LLM memory usage
+# LLM storage and memory usage
 
 Depends on the quantization and model size
 
@@ -440,7 +456,7 @@ Assuming 1.8 trillion parameters, 32-bit float:
 
 <v-click>
 
-And this is just the weights - you need more memory for the model, and the data you are working with.
+And this is just the parameters - you need more memory for the model, and the data you are working with.
 
 </v-click>
 
@@ -514,10 +530,7 @@ These are small enough to run on your CPU, or even your local GPU depending on w
 -->
 
 ---
-layout: image-center
-image: '/img/white-pieces-for-developers.svg'
-imageWidth: '400'
-transition: fade
+layout: center
 ---
 
 # Demo
@@ -638,7 +651,7 @@ SLMs are not as good as an LLM, so why would you use one?
 </v-clicks>
 
 <!--
-As we've seen, SLMs are good, but not as good as an SLM. So why would we use one?
+As we've seen, SLMs are good, but not as good as an LM. So why would we use one?
 
 The first reason is lack of internet access. Not a huge problem in the developed world unless you are on a tube, in the middle of the countryside, or on a plane.
 However, in the developing world, internet access is not as common. SLMs can be used in these areas.
