@@ -651,7 +651,7 @@ SLMs are not as good as an LLM, so why would you use one?
 </v-clicks>
 
 <!--
-As we've seen, SLMs are good, but not as good as an LM. So why would we use one?
+As we've seen, SLMs are good, but not as good as an LLM. So why would we use one?
 
 The first reason is lack of internet access. Not a huge problem in the developed world unless you are on a tube, in the middle of the countryside, or on a plane.
 However, in the developing world, internet access is not as common. SLMs can be used in these areas.
